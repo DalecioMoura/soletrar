@@ -134,6 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         divFeedback.style.backgroundColor = 'lightgrey'
         repeatButton.style.display = 'none';
         helpIcon.style.display = 'none';
+        definitionBox.style.display = 'none';
         console.log(`palavra sorteada: ${palavraSorteada}.\npalavrasoletrada: ${palavraSoletrada}.`);
         if (palavraSorteada == palavraSoletrada) {
             pontuacao++;
