@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //definicaoHtml.textContent = `definicão: ${definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim()}`
         console.log(definicao);
         repeatButton.style.display = 'block';
-        helpIcon.style.display = 'flex-box';
+        helpIcon.style.display = 'inline-block';
         divFeedback.style.display = 'none';
         spanFeedback.textContent = '';
         actionButtons.style.display = 'none';
