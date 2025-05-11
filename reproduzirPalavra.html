@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reproduzir Palavra Aleatória (TTS)</title>
+</head>
+<body>
+    <button onclick="reproduzirPalavraAleatoria()">Reproduzir Palavra Aleatória</button>
+    <p id="palavraSorteada"></p>
+
+    <script>
+        const palavras = ["ripimbocadaparafuseta","paralelepipedo","inconstitucionalissimamente"];
+        const palavraSorteadaElement = document.getElementById('palavraSorteada');
+
+        function escolherPalavraAleatoria() {
+            const indiceAleatorio = Math.floor(Math.random() * palavras.length);
+            return palavras[indiceAleatorio];
+        }
+
+        function reproduzirPalavraAleatoria() {
+            const palavra = escolherPalavraAleatoria();
+            palavraSorteadaElement.textContent = `Palavra sorteada: ${palavra}`;
+
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(palavra);
+
+                // Opcional: definir a língua para português brasileiro
+                utterance.lang = 'pt-BR';
+
+                // Opcional: definir a velocidade da fala (0.1 a 1.0)
+                utterance.rate = 0.8;
+
+                // Opcional: definir o tom da voz (0 a 2)
+                utterance.pitch = 1;
+
+                speechSynthesis.speak(utterance);
+            } else {
+                alert('A API de Text-to-Speech não é suportada neste navegador.');
+            }
+        }
+    </script>
+</body>
+</html>

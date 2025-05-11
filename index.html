@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando de Soletrar</title>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bem-vindo ao Brincando de Soletrar</h1>
+        </header>
+
+        <div class="score">
+            <p>Acertos: <span id="score-value">0</span></p>
+        </div>
+
+        <button id="start-button">Iniciar</button>
+
+        <div id="game-area" style="display: none;">
+            <div id="area-soletracao">
+                <div class="word-area">
+                    <button id="listen-button">Ouvir Palavra</button>
+                    <audio id="word-audio" src=""></audio>
+                </div>
+
+                <div class="spell-controls">
+                    <button id="start-spell-button">Iniciar Soletração</button>
+                    <p>Tempo Restante: <span id="timer">30</span> segundos</p>
+                </div>
+            </div>
+
+            <div id="div-feedback">
+                <p><span id="span-feedback"></span></p>
+            </div>
+            
+            <div id="id-action-buttons" class="action-buttons" style="display: none;">
+                <button id="send-button">Enviar</button>
+                <button id="repeat-button">Repetir</button>
+            </div>
+
+            <div class="help-button">
+                <button id="help-icon">?</button>
+                <div id="definition-box" style="display: none;">
+                    <p id="definition-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
