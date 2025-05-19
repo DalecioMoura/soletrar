@@ -1,3 +1,8 @@
+/*const fs = require('fs');
+const path = require('path');
+
+const caminho = path.join(__dirname, '../bd/palavrasSemClassificacao.json');
+const palavras = fs.readFileSync(caminho, 'utf-8');*/
 
 document.addEventListener('DOMContentLoaded', () => {
     const startButton = document.getElementById('start-button');
@@ -58,7 +63,7 @@ const mapaAcentos = {
         definicao = definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim();*/
         //definicaoHtml.textContent = `definicão: ${definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim()}`
         
-        const dicionario = await fetch('/soletrar/bd/palavrasSemClassificacao.json');
+        const dicionario = await fetch('../bd/palavrasSemClassificacao.json');
         const palavras = await dicionario.json();
 
         const palavraAleatoria = Math.floor((Math.random()*3818)+1);
