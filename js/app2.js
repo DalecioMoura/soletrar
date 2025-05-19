@@ -24,10 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
     let pontuacao = 0;
     let canSpell = false;
 
-    let mediaRecorder;
+    let mediaRecorder = [];
     let recognition;
     let isRecording = false;
     let palavraSoletrada = '';
+
+const mapaAcentos = {
+                        'a agudo': 'á', 'e agudo': 'é', 'i agudo': 'í', 'o agudo': 'ó', 'u agudo': 'ú',
+                        'a crase': 'à', 'a circunflexo': 'â', 'e circunflexo': 'ê', 'o circunflexo': 'ô',
+                        'a til': 'ã', 'o til': 'õ', 'a tio': 'ã', 'o tio': 'õ', 'c cedilha': 'ç'
+                        // ... adicione outras combinações
+                    };
 
     function iniciarJogo() {
         pontuacao = 0;
@@ -39,7 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function sortearPalavra() {
-        const buscarPalavra = await fetch('https://api.dicionario-aberto.net/random');
+
+        /*const buscarPalavra = await fetch('https://api.dicionario-aberto.net/random');
         const palavraEncontrada = await buscarPalavra.json();
         palavraSorteada = palavraEncontrada.word;
         console.log(palavraEncontrada.word);
@@ -47,8 +55,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const buscarDefinicao = await fetch(`https://api.dicionario-aberto.net/word/${palavraSorteada}`);
         const definicaoEncontrada = await buscarDefinicao.json();
         const definitionXML = definicaoEncontrada[0].xml;
-        definicao = definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim();
+        definicao = definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim();*/
         //definicaoHtml.textContent = `definicão: ${definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim()}`
+        
+        const dicionario = await fetch('/soletrar/bd/palavrasSemClassificacao.json');
+        const palavras = await dicionario.json();
+
+        const palavraAleatoria = Math.floor((Math.random()*3818)+1);
+        palavraSorteada = palavras.dicionario[palavraAleatoria].palavra;
+        definicao = palavras.dicionario[palavraAleatoria].significado;
+
+        console.log(palavraSorteada);
         console.log(definicao);
         repeatButton.style.display = 'block';
         helpIcon.style.display = 'inline-block';
@@ -120,7 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
         startSpellButton.textContent = 'Iniciar Soletração';
         clearInterval(intervaloDeTempo);
         stopRecording();
-        acentuarVogal(palavraSoletrada.toLocaleLowerCase());
+        //acentuarVogal(palavraSoletrada.toLocaleLowerCase());
+        acentuarVogalMelhorada(palavraSoletrada.toLocaleLowerCase());
         endRound(); // Para teste, vamos considerar como acerto ao parar
         actionButtons.style.display = 'block';
         areaSoletracao.style.display = 'none';
@@ -165,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startButton.addEventListener('click', iniciarJogo);
     sendButton.addEventListener('click', sortearPalavra);
 
-    function acentuarVogal(palavra){
+    /*function acentuarVogal(palavra){
         let arrayLetras = palavra.split(' ');
         let palavraAcentuada = '';
         let isAcento = false;
@@ -187,9 +205,42 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         palavraSoletrada = palavraAcentuada;
+    }*/
+
+    function acentuarVogalMelhorada(palavra) {
+        const arrayLetras = palavra.split(' ');
+        let palavraAcentuada = '';
+        for (let i = 0; i < arrayLetras.length; i++) {
+            console.log('letra: '+arrayLetras[i])
+            let letra = arrayLetras[i];
+            const proximo = arrayLetras[i + 1];
+            let combinacao = '';
+
+            if(letra == 'hífen'){
+                console.log('entrei no hífen')
+                letra = '-';
+            }   //caso seja reconhecida a letra acentuada, remove o acento
+            if(letra == 'é'){
+                letra = 'e';
+            }   //caso seja reconhecida a letra acentuada, remove o acento
+                
+            if(letra == 'ó'){
+                letra = 'o'; 
+            }   //caso seja reconhecida a letra acentuada, remove o acento
+            
+            combinacao = `${letra} ${proximo}`.toLowerCase();
+
+            if (mapaAcentos[combinacao]) {
+                palavraAcentuada += mapaAcentos[combinacao];
+                i++; // Pula o próximo elemento (o acento)
+            } else {
+                palavraAcentuada += letra;
+            }
+        }
+        palavraSoletrada = palavraAcentuada;
     }
 
-    function vogalAcentuada(acento, vogal){
+    /*function vogalAcentuada(acento, vogal){
         let vogalAcentuada = ''
         if(acento == 'agudo'){
             switch(vogal){
@@ -243,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         return vogalAcentuada;
-    }
+    }*/
 
     // Verificar se a Web Speech API é suportada
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
@@ -251,10 +302,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
         const grammarList = new SpeechGrammarList();
-        const letters = ['a', 'bê', 'cê', 'dê', 'é', 'efe', 'gê', 'agá', 'i', 'jota',
-                        'cá', 'ele', 'eme', 'ene', 'ó', 'pê', 'quê', 'erre', 'esse', 
+        const letters = ['a', 'bê', 'cê', 'dê', 'e', 'efe', 'gê', 'agá', 'i', 'jota',
+                        'cá', 'ele', 'eme', 'ene', 'o', 'pê', 'quê', 'que', 'erre', 'esse', 
                         'tê', 'u', 'vê', 'dáblio', 'xis', 'ípsilon', 'zê', 'agudo',
-                         'circunflexo', 'til', 'tio', 'tiu']; // Incluindo os nomes das letras
+                         'circunflexo', 'til', 'tio', 'tiu', 'crase', 'trema']; // Incluindo os nomes das letras
 
         const grammar = '#JSGF V1.0; grammar letters; public <letter> = ' + letters.join(' | ') + ' ;';
         grammarList.addFromString(grammar, 1);
@@ -263,9 +314,8 @@ document.addEventListener('DOMContentLoaded', () => {
         recognition.lang = 'pt-BR';
         recognition.continuous = true; // Manter a escuta ativa
         
-        recognition.interimResults = false;
+        recognition.interimResults = true;
         recognition.maxAlternatives = 1;
-       
 
         recognition.onstart = () => {
             console.log('Gravando...');//transcriptionElement.textContent = 'Gravando...';
@@ -277,14 +327,19 @@ document.addEventListener('DOMContentLoaded', () => {
             let interimTranscript = '';
 
             for (let i = event.resultIndex; i < event.results.length; ++i) {
+                console.log('Iteração: '+i)
                 if (event.results[i].isFinal) {
-                    finalTranscript += event.results[i][0].transcript + '';
+                    return //finalTranscript += event.results[i][0].transcript + '';
                 } else {
-                    interimTranscript += event.results[i][0].transcript;  
+                    interimTranscript += event.results[i][0].transcript;
                 }
+                 
             }
-
-            palavraSoletrada = (finalTranscript + interimTranscript);//.replace(/\s/g, '');
+            
+            console.log("inter: "+interimTranscript+'\n'+'final: '+finalTranscript);
+            
+           palavraSoletrada = (finalTranscript + interimTranscript);//.replace(/\s/g, '');
+            console.log("Palavra soletrada: "+ palavraSoletrada);
             console.log(finalTranscript + interimTranscript);//transcriptionElement.textContent = finalTranscript + interimTranscript;
         };
 
