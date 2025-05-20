@@ -72,6 +72,7 @@ const mapaAcentos = {
 
         console.log(palavraSorteada);
         console.log(definicao);
+
         repeatButton.style.display = 'block';
         helpIcon.style.display = 'inline-block';
         divFeedback.style.display = 'none';
@@ -343,7 +344,7 @@ const mapaAcentos = {
             
             console.log("inter: "+interimTranscript+'\n'+'final: '+finalTranscript);
             
-           palavraSoletrada = (finalTranscript + interimTranscript);//.replace(/\s/g, '');
+            palavraSoletrada = (finalTranscript + interimTranscript);//.replace(/\s/g, '');
             console.log("Palavra soletrada: "+ palavraSoletrada);
             console.log(finalTranscript + interimTranscript);//transcriptionElement.textContent = finalTranscript + interimTranscript;
         };
@@ -370,10 +371,15 @@ const mapaAcentos = {
             isRecording = false;
         }
     }
-    
 
-    /* OPÇÃO 1: DICIONÁRIO DE MAPEAMENTO */
-    /*const mapaAcentos = {
+});
+
+
+
+/* OPÇÕES DE MELHORIA PARA O TRATAMENTO DE ACENTUAÇÃO */
+
+ /* OPÇÃO 1: DICIONÁRIO DE MAPEAMENTO */
+   /* const mapaAcentos = {
   'a agudo': 'á',
   'e agudo': 'é',
   'i agudo': 'í',
@@ -411,13 +417,6 @@ function acentuarVogalMelhorada(palavra) {
 const palavraSoletradaComAcento = 'a agudo l o';
 const palavraAcentuadaResult = acentuarVogalMelhorada(palavraSoletradaComAcento);
 console.log(palavraAcentuadaResult); // Saída: álo*/
-
-});
-
-
-
-/* OPÇÕES DE MELHORIA PARA O TRATAMENTO DE ACENTUAÇÃO */
-
 
 
 

@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         definicao = definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim();
         //definicaoHtml.textContent = `definicão: ${definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim()}`
         console.log(definicao);
+        
         repeatButton.style.display = 'block';
         helpIcon.style.display = 'inline-block';
         divFeedback.style.display = 'none';
