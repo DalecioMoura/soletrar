@@ -335,18 +335,18 @@ const mapaAcentos = {
             for (let i = event.resultIndex; i < event.results.length; ++i) {
                 console.log('Iteração: '+i)
                 if (event.results[i].isFinal) {
-                    return //finalTranscript += event.results[i][0].transcript + '';
+                    finalTranscript += event.results[i][0].transcript + '';
                 } else {
                     interimTranscript += event.results[i][0].transcript;
                 }
                  
             }
             
-            console.log("inter: "+interimTranscript+'\n'+'final: '+finalTranscript);
+            //console.log("inter: "+interimTranscript+'\n'+'final: '+finalTranscript);
             
             palavraSoletrada = (finalTranscript + interimTranscript);//.replace(/\s/g, '');
-            console.log("Palavra soletrada: "+ palavraSoletrada);
-            console.log(finalTranscript + interimTranscript);//transcriptionElement.textContent = finalTranscript + interimTranscript;
+            //console.log("Palavra soletrada: "+ palavraSoletrada);
+            //console.log(finalTranscript + interimTranscript);//transcriptionElement.textContent = finalTranscript + interimTranscript;
         };
 
         recognition.onerror = (event) => {
