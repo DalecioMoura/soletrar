@@ -323,7 +323,7 @@ const mapaAcentos = {
         recognition.lang = 'pt-BR';
         recognition.continuous = true; // Manter a escuta ativa
         
-        recognition.interimResults = false;
+        recognition.interimResults = true;
         recognition.maxAlternatives = 1;
 
         recognition.onstart = () => {
