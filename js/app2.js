@@ -125,6 +125,7 @@ const mapaAcentos = {
     }
 
     function iniciarSoletracao() {
+        palavraSoletrada = '';
         canSpell = true;
         startSpellButton.textContent = 'Parar Soletração';
         iniciarTempo();
@@ -186,34 +187,7 @@ const mapaAcentos = {
         definitionText.textContent = definicao;
     });
 
-    startButton.addEventListener('click', iniciarJogo);
-    sendButton.addEventListener('click', sortearPalavra);
-
-    /*function acentuarVogal(palavra){
-        let arrayLetras = palavra.split(' ');
-        let palavraAcentuada = '';
-        let isAcento = false;
-        let acento = '';
-        const teste = ['a','b','agudo','a','l','o'];
-        for(i in arrayLetras){
-            if(arrayLetras[i] == 'agudo' || arrayLetras[i] == 'circunflexo' || arrayLetras[i] == 'crase' || arrayLetras[i] == 'til' || arrayLetras[i] == 'tio' || arrayLetras[i] == 'tiu'){
-                acento = arrayLetras[i];
-                console.log('acento:' +acento);
-                isAcento = true;
-            }
-            else{
-                if(isAcento){
-                    palavraAcentuada += vogalAcentuada(acento, arrayLetras[i]);
-                    isAcento = false;
-                }    
-                else
-                    palavraAcentuada += arrayLetras[i];
-            }
-        }
-        palavraSoletrada = palavraAcentuada;
-    }*/
-
-    function acentuarVogalMelhorada(palavra) {
+     function acentuarVogalMelhorada(palavra) {
         const arrayLetras = palavra.split(' ');
         let palavraAcentuada = '';
         for (let i = 0; i < arrayLetras.length; i++) {
@@ -245,6 +219,35 @@ const mapaAcentos = {
         }
         palavraSoletrada = palavraAcentuada;
     }
+
+    startButton.addEventListener('click', iniciarJogo);
+    sendButton.addEventListener('click', sortearPalavra);
+
+    /*function acentuarVogal(palavra){
+        let arrayLetras = palavra.split(' ');
+        let palavraAcentuada = '';
+        let isAcento = false;
+        let acento = '';
+        const teste = ['a','b','agudo','a','l','o'];
+        for(i in arrayLetras){
+            if(arrayLetras[i] == 'agudo' || arrayLetras[i] == 'circunflexo' || arrayLetras[i] == 'crase' || arrayLetras[i] == 'til' || arrayLetras[i] == 'tio' || arrayLetras[i] == 'tiu'){
+                acento = arrayLetras[i];
+                console.log('acento:' +acento);
+                isAcento = true;
+            }
+            else{
+                if(isAcento){
+                    palavraAcentuada += vogalAcentuada(acento, arrayLetras[i]);
+                    isAcento = false;
+                }    
+                else
+                    palavraAcentuada += arrayLetras[i];
+            }
+        }
+        palavraSoletrada = palavraAcentuada;
+    }*/
+
+   
 
     /*function vogalAcentuada(acento, vogal){
         let vogalAcentuada = ''
@@ -341,10 +344,10 @@ const mapaAcentos = {
                 }
                  
             }
-            
+            palavraSoletrada = (finalTranscript + interimTranscript);
             //console.log("inter: "+interimTranscript+'\n'+'final: '+finalTranscript);
             
-            palavraSoletrada = (finalTranscript + interimTranscript);//.replace(/\s/g, '');
+            //.replace(/\s/g, '');
             //console.log("Palavra soletrada: "+ palavraSoletrada);
             //console.log(finalTranscript + interimTranscript);//transcriptionElement.textContent = finalTranscript + interimTranscript;
         };
