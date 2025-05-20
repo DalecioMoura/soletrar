@@ -320,7 +320,7 @@ const mapaAcentos = {
         recognition.lang = 'pt-BR';
         recognition.continuous = true; // Manter a escuta ativa
         
-        recognition.interimResults = true;
+        recognition.interimResults = false;
         recognition.maxAlternatives = 1;
 
         recognition.onstart = () => {
