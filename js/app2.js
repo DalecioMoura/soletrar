@@ -225,6 +225,7 @@ const mapaAcentos = {
 
     // Verificar se a Web Speech API é suportada
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+        console.log('A API está sendo reconhecida')
         recognition = new (window.webkitSpeechRecognition || window.SpeechRecognition)();
 
         const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
