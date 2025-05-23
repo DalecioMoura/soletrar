@@ -63,7 +63,8 @@ const mapaAcentos = {
         definicao = definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim();*/
         //definicaoHtml.textContent = `definicão: ${definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim()}`
         
-        const dicionario = await fetch('../bd/palavrasSemClassificacao.json');
+        const dicionario = await fetch('bd/palavrasSemClassificacao.json');
+        //const dicionario = await fetch('../bd/palavrasSemClassificacao.json');
         const palavras = await dicionario.json();
 
         const palavraAleatoria = Math.floor((Math.random()*3818)+1);
@@ -128,15 +129,34 @@ const mapaAcentos = {
         palavraSoletrada = '';
         canSpell = true;
         startSpellButton.textContent = 'Parar Soletração';
+
+        navigator.mediaDevices.getUserMedia({ audio: true })
+            .then(function(stream) {
+            // Permissão concedida!
+            console.log('Permissão do microfone concedida.');
+            // Você pode armazenar o stream se precisar mantê-lo ativo
+            // const audioStream = stream;
+
+            // Agora que temos permissão, podemos iniciar o reconhecimento de fala
+                if (recognition) {
+                    try{
+                        recognition.start();
+                        console.log('Soletração iniciada...');
+                    }
+                    catch(error){
+                        console.error('Erro ao iniciar o reconhecimento de fala:', error);
+                    }    
+                }
+            })
+            .catch(function(error) {
+            // Permissão negada ou erro ao acessar o microfone
+            console.error('Permissão do microfone negada ou erro:', error);
+            // Exiba uma mensagem amigável ao usuário informando que o recurso precisa de acesso ao microfone
+            alert('Para usar o reconhecimento de fala, você precisa permitir o acesso ao microfone.');
+            // Você pode também fornecer instruções sobre como habilitar o microfone nas configurações do navegador
+            });
+    
         iniciarTempo();
-        if (recognition) {
-            recognition.start();
-        }
-        // Em um cenário real, aqui você habilitaria a entrada do jogador (teclado ou voz)
-        // Para este exemplo, vamos simular que o jogador está soletrando.
-        console.log('Soletração iniciada...');
-        // Quando o jogador "parar" a soletração (clicar novamente no botão),
-        // você compararia a soletração dele com a 'currentWord'.
     }
 
     function pararSoletracao() {
@@ -323,7 +343,7 @@ const mapaAcentos = {
         recognition.lang = 'pt-BR';
         recognition.continuous = true; // Manter a escuta ativa
         
-        recognition.interimResults = false;
+        recognition.interimResults = true;
         recognition.maxAlternatives = 1;
 
         recognition.onstart = () => {
