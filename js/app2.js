@@ -1,9 +1,3 @@
-/*const fs = require('fs');
-const path = require('path');
-
-const caminho = path.join(__dirname, '../bd/palavrasSemClassificacao.json');
-const palavras = fs.readFileSync(caminho, 'utf-8');*/
-
 document.addEventListener('DOMContentLoaded', () => {
     const startButton = document.getElementById('start-button');
     const gameArea = document.getElementById('game-area');
@@ -51,17 +45,6 @@ const mapaAcentos = {
     }
 
     async function sortearPalavra() {
-
-        /*const buscarPalavra = await fetch('https://api.dicionario-aberto.net/random');
-        const palavraEncontrada = await buscarPalavra.json();
-        palavraSorteada = palavraEncontrada.word;
-        console.log(palavraEncontrada.word);
-
-        const buscarDefinicao = await fetch(`https://api.dicionario-aberto.net/word/${palavraSorteada}`);
-        const definicaoEncontrada = await buscarDefinicao.json();
-        const definitionXML = definicaoEncontrada[0].xml;
-        definicao = definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim();*/
-        //definicaoHtml.textContent = `definicão: ${definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim()}`
         
         const dicionario = await fetch('bd/palavrasSemClassificacao.json');
         //const dicionario = await fetch('../bd/palavrasSemClassificacao.json');
@@ -95,14 +78,11 @@ const mapaAcentos = {
         if ('speechSynthesis' in window) {
             const utterance = new SpeechSynthesisUtterance(palavraSorteada);
 
-            // Opcional: definir a língua para português brasileiro
-            utterance.lang = 'pt-BR';
-
-            // Opcional: definir a velocidade da fala (0.1 a 1.0)
-            utterance.rate = 0.7;
-
-            // Opcional: definir o tom da voz (0 a 2)
-            utterance.pitch = 1.5;
+            utterance.lang = 'pt-BR'; // Opcional: definir a língua para português brasileiro
+  
+            utterance.rate = 0.7; // Opcional: definir a velocidade da fala (0.1 a 1.0)
+ 
+            utterance.pitch = 1.5; // Opcional: definir o tom da voz (0 a 2)
 
             speechSynthesis.speak(utterance);
             return(palavraSorteada);
@@ -134,6 +114,7 @@ const mapaAcentos = {
             .then(function(stream) {
             // Permissão concedida!
             console.log('Permissão do microfone concedida.');
+            alert('Permissão concedida!')
             // Você pode armazenar o stream se precisar mantê-lo ativo
             // const audioStream = stream;
 
@@ -164,7 +145,6 @@ const mapaAcentos = {
         startSpellButton.textContent = 'Iniciar Soletração';
         clearInterval(intervaloDeTempo);
         stopRecording();
-        //acentuarVogal(palavraSoletrada.toLocaleLowerCase());
         acentuarVogalMelhorada(palavraSoletrada.toLocaleLowerCase());
         endRound(); // Para teste, vamos considerar como acerto ao parar
         actionButtons.style.display = 'block';
@@ -243,88 +223,6 @@ const mapaAcentos = {
     startButton.addEventListener('click', iniciarJogo);
     sendButton.addEventListener('click', sortearPalavra);
 
-    /*function acentuarVogal(palavra){
-        let arrayLetras = palavra.split(' ');
-        let palavraAcentuada = '';
-        let isAcento = false;
-        let acento = '';
-        const teste = ['a','b','agudo','a','l','o'];
-        for(i in arrayLetras){
-            if(arrayLetras[i] == 'agudo' || arrayLetras[i] == 'circunflexo' || arrayLetras[i] == 'crase' || arrayLetras[i] == 'til' || arrayLetras[i] == 'tio' || arrayLetras[i] == 'tiu'){
-                acento = arrayLetras[i];
-                console.log('acento:' +acento);
-                isAcento = true;
-            }
-            else{
-                if(isAcento){
-                    palavraAcentuada += vogalAcentuada(acento, arrayLetras[i]);
-                    isAcento = false;
-                }    
-                else
-                    palavraAcentuada += arrayLetras[i];
-            }
-        }
-        palavraSoletrada = palavraAcentuada;
-    }*/
-
-   
-
-    /*function vogalAcentuada(acento, vogal){
-        let vogalAcentuada = ''
-        if(acento == 'agudo'){
-            switch(vogal){
-                case 'a':
-                    vogalAcentuada = 'á';
-                break;
-                case 'e':
-                case 'é':
-                    vogalAcentuada = 'é';
-                break;
-                case 'i':
-                    vogalAcentuada = 'í';
-                break;
-                case 'o':
-                    vogalAcentuada = 'ó';
-                break;
-                case 'u':
-                    vogalAcentuada = 'ú';
-                break;
-            }
-        }
-        if(acento == 'crase'){
-            switch(vogal){
-                case 'a':
-                    vogalAcentuada = 'à';
-                break;
-            }
-        }
-        if(acento == 'circunflexo'){
-            switch(vogal){
-                case 'a':
-                    vogalAcentuada = 'â';
-                break;
-                case 'e':
-                case 'é':
-                    vogalAcentuada = 'ê';
-                break;
-                case 'o':
-                    vogalAcentuada = 'ô';
-                break;    
-            }
-        }
-        if(acento == 'til' || acento == 'tio' || acento == 'tiu'){
-            switch(vogal){
-                case 'a':
-                    vogalAcentuada = 'ã';
-                break;
-                case 'e':
-                    vogalAcentuada = 'õ';
-                break;
-            }
-        }
-        return vogalAcentuada;
-    }*/
-
     // Verificar se a Web Speech API é suportada
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
         recognition = new (window.webkitSpeechRecognition || window.SpeechRecognition)();
@@ -365,11 +263,11 @@ const mapaAcentos = {
                  
             }
             palavraSoletrada = (finalTranscript + interimTranscript);
-            //console.log("inter: "+interimTranscript+'\n'+'final: '+finalTranscript);
+            console.log("inter: "+interimTranscript+'\n'+'final: '+finalTranscript);
             
             //.replace(/\s/g, '');
-            //console.log("Palavra soletrada: "+ palavraSoletrada);
-            //console.log(finalTranscript + interimTranscript);//transcriptionElement.textContent = finalTranscript + interimTranscript;
+            console.log("Palavra soletrada: "+ palavraSoletrada);
+            console.log(finalTranscript + interimTranscript);//transcriptionElement.textContent = finalTranscript + interimTranscript;
         };
 
         recognition.onerror = (event) => {
@@ -396,77 +294,3 @@ const mapaAcentos = {
     }
 
 });
-
-
-
-/* OPÇÕES DE MELHORIA PARA O TRATAMENTO DE ACENTUAÇÃO */
-
- /* OPÇÃO 1: DICIONÁRIO DE MAPEAMENTO */
-   /* const mapaAcentos = {
-  'a agudo': 'á',
-  'e agudo': 'é',
-  'i agudo': 'í',
-  'o agudo': 'ó',
-  'u agudo': 'ú',
-  'a crase': 'à',
-  'a circunflexo': 'â',
-  'e circunflexo': 'ê',
-  'o circunflexo': 'ô',
-  'a til': 'ã',
-  'o til': 'õ',
-  // ... adicione outras combinações
-};
-
-
-function acentuarVogalMelhorada(palavra) {
-  const arrayLetras = palavra.split(' ');
-  let palavraAcentuada = '';
-  for (let i = 0; i < arrayLetras.length; i++) {
-    const letra = arrayLetras[i];
-    const proximo = arrayLetras[i + 1];
-    const combinacao = `${letra} ${proximo}`.toLowerCase();
-
-    if (mapaAcentos[combinacao]) {
-      palavraAcentuada += mapaAcentos[combinacao];
-      i++; // Pula o próximo elemento (o acento)
-    } else {
-      palavraAcentuada += letra;
-    }
-  }
-  return palavraAcentuada;
-}
-
-// Exemplo de uso:
-const palavraSoletradaComAcento = 'a agudo l o';
-const palavraAcentuadaResult = acentuarVogalMelhorada(palavraSoletradaComAcento);
-console.log(palavraAcentuadaResult); // Saída: álo*/
-
-
-
-
-/*OPÇÃO 2: REFINAMENTO NA ESTRUTURA ATUAL */
- /*function acentuarVogalRefinada(palavra) {
-  return palavra.toLowerCase().replace(
-    /(a|e|i|o|u) (agudo|circunflexo|crase|til|tio|tiu)/g,
-    (match, vogal, acento) => {
-      switch (acento) {
-        case 'agudo':
-          return {'a': 'á', 'e': 'é', 'i': 'í', 'o': 'ó', 'u': 'ú'}[vogal] || vogal;
-        case 'circunflexo':
-          return {'a': 'â', 'e': 'ê', 'o': 'ô'}[vogal] || vogal;
-        case 'crase':
-          return {'a': 'à'}[vogal] || vogal;
-        case 'til':
-        case 'tio': // Incluindo variações
-        case 'tiu':
-          return {'a': 'ã', 'o': 'õ'}[vogal] || vogal;
-        default:
-          return vogal;
-      }
-    }
-  ).replace(/\s+/g, ' '); // Remove espaços extras após a substituição
-}
-
-const palavraSoletradaComAcento2 = 'E  circunflexo n t a o';
-const palavraAcentuadaResult2 = acentuarVogalRefinada(palavraSoletradaComAcento2);
-console.log(palavraAcentuadaResult2); // Saída: então*/

@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     background-color: #f4f4f4;
+    background-image: url('../assets/img/img1.jpeg');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,11 +10,24 @@ body {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+    /*height: 600px;;*/
     background-color: #fff;
+    background-image: url('../assets/img/img5.jpeg');
+    background-size: contain;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
+    /*height: auto;*/
+}
+
+header{
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -22,12 +36,17 @@ header h1 {
 }
 
 .score {
-    margin-bottom: 20px;
+    margin-top: auto;
+    margin-bottom: 10px;
     font-size: 1.1em;
-    color: #555;
+    color: white;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 0px 20px;
 }
 
 #start-button {
+    margin-top: auto;
     background-color: #007bff;
     color: white;
     border: none;
@@ -36,6 +55,7 @@ header h1 {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    
 }
 
 #start-button:hover {
@@ -43,7 +63,41 @@ header h1 {
 }
 
 #game-area {
-    margin-top: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    
+    border: solid 2px black;
+}
+
+#area-soletracao{
+    border: solid 2px black;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#div-feedback{
+    border: solid 2px black;
+    margin-bottom: 10px;
+}
+
+.help-button{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#id-action-buttons{
+    border:  solid 2px black;
+    justify-content: center;
+    margin-bottom: 0;
 }
 
 .word-area button,
@@ -61,12 +115,16 @@ header h1 {
     transition: background-color 0.3s ease;
 }
 
+
+
 .word-area button:hover,
 .spell-controls button:hover,
 .action-buttons button:hover,
 .help-button button:hover {
     background-color: #1e7e34;
 }
+
+
 
 #listen-button {
     background-color: #6c757d;
