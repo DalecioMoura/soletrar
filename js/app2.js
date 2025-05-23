@@ -251,6 +251,7 @@ const mapaAcentos = {
         };
 
         recognition.onresult = (event) => {
+             console.log('Resultados')
             let finalTranscript = '';
             let interimTranscript = '';
 
@@ -260,6 +261,7 @@ const mapaAcentos = {
                     finalTranscript += event.results[i][0].transcript + '';
                 } else {
                     interimTranscript += event.results[i][0].transcript;
+                    console.log("Transição: "+ interimTranscript);
                 }
                  
             }
