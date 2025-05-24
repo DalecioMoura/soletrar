@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
     const startButton = document.getElementById('start-button');
     const gameArea = document.getElementById('game-area');
@@ -39,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function sortearPalavra() {
-        const buscarPalavra = await fetch('https://api.dicionario-aberto.net/random');
+        /*const buscarPalavra = await fetch('https://api.dicionario-aberto.net/random');
         const palavraEncontrada = await buscarPalavra.json();
         palavraSorteada = palavraEncontrada.word;
         console.log(palavraEncontrada.word);
@@ -49,6 +48,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const definitionXML = definicaoEncontrada[0].xml;
         definicao = definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim();
         //definicaoHtml.textContent = `definicão: ${definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim()}`
+        console.log(definicao);*/
+
+        const dicionario = await fetch('bd/palavrasSemClassificacao.json');
+        //const dicionario = await fetch('../bd/palavrasSemClassificacao.json');
+        const palavras = await dicionario.json();
+
+        const palavraAleatoria = Math.floor((Math.random()*3818)+1);
+        palavraSorteada = palavras.dicionario[palavraAleatoria].palavra;
+        definicao = palavras.dicionario[palavraAleatoria].significado;
+
+        console.log(palavraSorteada);
         console.log(definicao);
         
         repeatButton.style.display = 'block';
