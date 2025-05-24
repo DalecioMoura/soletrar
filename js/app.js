@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
         startSpellButton.textContent = 'Iniciar Soletração';
         clearInterval(intervaloDeTempo);
         stopRecording();
-        acentuarVogal(palavraSoletrada.toLocaleLowerCase());
+        acentuarVogalMelhorada(palavraSoletrada.toLocaleLowerCase());
         endRound(); // Para teste, vamos considerar como acerto ao parar
         actionButtons.style.display = 'block';
         areaSoletracao.style.display = 'none';
@@ -182,6 +182,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
     startButton.addEventListener('click', iniciarJogo);
     sendButton.addEventListener('click', sortearPalavra);
+
+    function acentuarVogalMelhorada(palavra) {
+        const arrayLetras = palavra.split(' ');
+        let palavraAcentuada = '';
+        for (let i = 0; i < arrayLetras.length; i++) {
+            const letra = arrayLetras[i];
+            const proximo = arrayLetras[i + 1];
+            const combinacao = `${letra} ${proximo}`.toLowerCase();
+
+            if (mapaAcentos[combinacao]) {
+                palavraAcentuada += mapaAcentos[combinacao];
+                i++; // Pula o próximo elemento (o acento)
+            } else {
+                palavraAcentuada += letra;
+            }
+        }
+        palavraSoletrada = palavraAcentuada;
+    }
 
     function acentuarVogal(palavra){
         let arrayLetras = palavra.split(' ');
