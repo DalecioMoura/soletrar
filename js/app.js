@@ -45,6 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     async function sortearPalavra() {
+        palavraSoletrada = '';
         /*const buscarPalavra = await fetch('https://api.dicionario-aberto.net/random');
         const palavraEncontrada = await buscarPalavra.json();
         palavraSorteada = palavraEncontrada.word;
@@ -123,9 +124,15 @@ document.addEventListener('DOMContentLoaded', () => {
         canSpell = true;
         startSpellButton.textContent = 'Parar Soletração';
         iniciarTempo();
-        if (recognition) {
-            recognition.start();
+        try{
+            if (recognition) {
+                recognition.start();
         }
+        }
+        catch(error){
+            console.error('Erro ao iniciar o reconhecimento de fala:', error);
+        }
+        
         // Em um cenário real, aqui você habilitaria a entrada do jogador (teclado ou voz)
         // Para este exemplo, vamos simular que o jogador está soletrando.
         console.log('Soletração iniciada...');
@@ -185,20 +192,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function acentuarVogalMelhorada(palavra) {
         const arrayLetras = palavra.split(' ');
-        let palavraAcentuada = '';
+        let palavraAcentuada = [];
         for (let i = 0; i < arrayLetras.length; i++) {
             const letra = arrayLetras[i];
             const proximo = arrayLetras[i + 1];
             const combinacao = `${letra} ${proximo}`.toLowerCase();
 
             if (mapaAcentos[combinacao]) {
-                palavraAcentuada += mapaAcentos[combinacao];
+                palavraAcentuada.push(mapaAcentos[combinacao]);
                 i++; // Pula o próximo elemento (o acento)
             } else {
-                palavraAcentuada += letra;
+                palavraAcentuada.push(letra);
             }
         }
-        palavraSoletrada = palavraAcentuada;
+        palavraSoletrada = palavraAcentuada.join();
     }
 
     /*function acentuarVogal(palavra){
