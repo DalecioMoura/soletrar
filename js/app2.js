@@ -228,7 +228,7 @@ const mapaAcentos = {
         console.log('A API está sendo reconhecida')
         recognition = new (window.webkitSpeechRecognition || window.SpeechRecognition)();
 
-        const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
+       /* const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
         const grammarList = new SpeechGrammarList();
         const letters = ['a', 'bê', 'cê', 'dê', 'e', 'efe', 'gê', 'agá', 'i', 'jota',
                         'cá', 'ele', 'eme', 'ene', 'o', 'pê', 'quê', 'que', 'erre', 'esse', 
@@ -237,7 +237,7 @@ const mapaAcentos = {
 
         const grammar = '#JSGF V1.0; grammar letters; public <letter> = ' + letters.join(' | ') + ' ;';
         grammarList.addFromString(grammar, 1);
-        recognition.grammars = grammarList;
+        recognition.grammars = grammarList;*/
 
         recognition.lang = 'pt-BR';
         recognition.continuous = true; // Manter a escuta ativa
