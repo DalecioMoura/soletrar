@@ -28,6 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let isRecording = false;
     let palavraSoletrada = '';
 
+    const mapaAcentos = {
+                        'a agudo': 'á', 'e agudo': 'é', 'i agudo': 'í', 'o agudo': 'ó', 'u agudo': 'ú',
+                        'a crase': 'à', 'a circunflexo': 'â', 'e circunflexo': 'ê', 'o circunflexo': 'ô',
+                        'a til': 'ã', 'o til': 'õ', 'a tio': 'ã', 'o tio': 'õ', 'c cedilha': 'ç'
+                        // ... adicione outras combinações
+                    };
+
     function iniciarJogo() {
         pontuacao = 0;
         scoreValue.textContent = pontuacao;
@@ -274,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
         recognition.lang = 'pt-BR';
         recognition.continuous = true; // Manter a escuta ativa
         
-        recognition.interimResults = false;
+        recognition.interimResults = true;
         recognition.maxAlternatives = 1;
        
 
