@@ -121,8 +121,8 @@ const mapaAcentos = {
             // Agora que temos permissão, podemos iniciar o reconhecimento de fala
                 if (recognition) {
                     try{
+                        recognition.stop();
                         recognition.start();
-                        console.log('Soletração iniciada...');
                     }
                     catch(error){
                         console.error('Erro ao iniciar o reconhecimento de fala:', error);
