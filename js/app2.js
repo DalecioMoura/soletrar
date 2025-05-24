@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let pontuacao = 0;
     let canSpell = false;
 
-    let mediaRecorder = [];
     let recognition;
     let isRecording = false;
     let palavraSoletrada = '';
@@ -41,13 +40,11 @@ const mapaAcentos = {
         startButton.style.display = 'none';
         gameArea.style.display = 'block';
         sortearPalavra();
-        //palavraAtual = reproduzirPalavraAleatoria();
     }
 
     async function sortearPalavra() {
         
         const dicionario = await fetch('bd/palavrasSemClassificacao.json');
-        //const dicionario = await fetch('../bd/palavrasSemClassificacao.json');
         const palavras = await dicionario.json();
 
         const palavraAleatoria = Math.floor((Math.random()*3818)+1);
@@ -228,7 +225,7 @@ const mapaAcentos = {
         console.log('A API está sendo reconhecida')
         recognition = new (window.webkitSpeechRecognition || window.SpeechRecognition)();
 
-       /* const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
+        const SpeechGrammarList = window.SpeechGrammarList || window.webkitSpeechGrammarList;
         const grammarList = new SpeechGrammarList();
         const letters = ['a', 'bê', 'cê', 'dê', 'e', 'efe', 'gê', 'agá', 'i', 'jota',
                         'cá', 'ele', 'eme', 'ene', 'o', 'pê', 'quê', 'que', 'erre', 'esse', 
@@ -237,7 +234,7 @@ const mapaAcentos = {
 
         const grammar = '#JSGF V1.0; grammar letters; public <letter> = ' + letters.join(' | ') + ' ;';
         grammarList.addFromString(grammar, 1);
-        recognition.grammars = grammarList;*/
+        recognition.grammars = grammarList;
 
         recognition.lang = 'pt-BR';
         recognition.continuous = true; // Manter a escuta ativa
@@ -295,5 +292,4 @@ const mapaAcentos = {
             isRecording = false;
         }
     }
-
 });

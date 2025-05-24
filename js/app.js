@@ -38,9 +38,8 @@ document.addEventListener('DOMContentLoaded', () => {
         pontuacao = 0;
         scoreValue.textContent = pontuacao;
         startButton.style.display = 'none';
-        gameArea.style.display = 'block';
+        gameArea.style.display = 'flex';
         sortearPalavra();
-        //palavraAtual = reproduzirPalavraAleatoria();
     }
 
     async function sortearPalavra() {
