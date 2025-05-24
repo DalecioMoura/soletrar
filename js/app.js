@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', () => {
         palavraSoletrada = palavraAcentuada;
     }
 
-    function acentuarVogal(palavra){
+    /*function acentuarVogal(palavra){
         let arrayLetras = palavra.split(' ');
         let palavraAcentuada = '';
         let isAcento = false;
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
         return vogalAcentuada;
-    }
+    }*/
 
     // Verificar se a Web Speech API é suportada
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
@@ -346,81 +346,4 @@ document.addEventListener('DOMContentLoaded', () => {
             isRecording = false;
         }
     }
-    
-
-    /* OPÇÃO 1: DICIONÁRIO DE MAPEAMENTO */
-    /*const mapaAcentos = {
-  'a agudo': 'á',
-  'e agudo': 'é',
-  'i agudo': 'í',
-  'o agudo': 'ó',
-  'u agudo': 'ú',
-  'a crase': 'à',
-  'a circunflexo': 'â',
-  'e circunflexo': 'ê',
-  'o circunflexo': 'ô',
-  'a til': 'ã',
-  'o til': 'õ',
-  // ... adicione outras combinações
-};
-
-
-function acentuarVogalMelhorada(palavra) {
-  const arrayLetras = palavra.split(' ');
-  let palavraAcentuada = '';
-  for (let i = 0; i < arrayLetras.length; i++) {
-    const letra = arrayLetras[i];
-    const proximo = arrayLetras[i + 1];
-    const combinacao = `${letra} ${proximo}`.toLowerCase();
-
-    if (mapaAcentos[combinacao]) {
-      palavraAcentuada += mapaAcentos[combinacao];
-      i++; // Pula o próximo elemento (o acento)
-    } else {
-      palavraAcentuada += letra;
-    }
-  }
-  return palavraAcentuada;
-}
-
-// Exemplo de uso:
-const palavraSoletradaComAcento = 'a agudo l o';
-const palavraAcentuadaResult = acentuarVogalMelhorada(palavraSoletradaComAcento);
-console.log(palavraAcentuadaResult); // Saída: álo*/
-
 });
-
-
-
-/* OPÇÕES DE MELHORIA PARA O TRATAMENTO DE ACENTUAÇÃO */
-
-
-
-
-
-/*OPÇÃO 2: REFINAMENTO NA ESTRUTURA ATUAL */
- /*function acentuarVogalRefinada(palavra) {
-  return palavra.toLowerCase().replace(
-    /(a|e|i|o|u) (agudo|circunflexo|crase|til|tio|tiu)/g,
-    (match, vogal, acento) => {
-      switch (acento) {
-        case 'agudo':
-          return {'a': 'á', 'e': 'é', 'i': 'í', 'o': 'ó', 'u': 'ú'}[vogal] || vogal;
-        case 'circunflexo':
-          return {'a': 'â', 'e': 'ê', 'o': 'ô'}[vogal] || vogal;
-        case 'crase':
-          return {'a': 'à'}[vogal] || vogal;
-        case 'til':
-        case 'tio': // Incluindo variações
-        case 'tiu':
-          return {'a': 'ã', 'o': 'õ'}[vogal] || vogal;
-        default:
-          return vogal;
-      }
-    }
-  ).replace(/\s+/g, ' '); // Remove espaços extras após a substituição
-}
-
-const palavraSoletradaComAcento2 = 'E  circunflexo n t a o';
-const palavraAcentuadaResult2 = acentuarVogalRefinada(palavraSoletradaComAcento2);
-console.log(palavraAcentuadaResult2); // Saída: então*/
