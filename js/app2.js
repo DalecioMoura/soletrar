@@ -114,7 +114,7 @@ const mapaAcentos = {
             .then(function(stream) {
             // Permissão concedida!
             console.log('Permissão do microfone concedida.');
-            alert('Permissão concedida!')
+            iniciarTempo();
             // Você pode armazenar o stream se precisar mantê-lo ativo
             // const audioStream = stream;
 
@@ -137,7 +137,7 @@ const mapaAcentos = {
             // Você pode também fornecer instruções sobre como habilitar o microfone nas configurações do navegador
             });
     
-        iniciarTempo();
+        
     }
 
     function pararSoletracao() {

@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let pontuacao = 0;
     let canSpell = false;
 
-    let mediaRecorder;
     let recognition;
     let isRecording = false;
     let palavraSoletrada = '';
@@ -46,20 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     async function sortearPalavra() {
         palavraSoletrada = '';
-        /*const buscarPalavra = await fetch('https://api.dicionario-aberto.net/random');
-        const palavraEncontrada = await buscarPalavra.json();
-        palavraSorteada = palavraEncontrada.word;
-        console.log(palavraEncontrada.word);
-
-        const buscarDefinicao = await fetch(`https://api.dicionario-aberto.net/word/${palavraSorteada}`);
-        const definicaoEncontrada = await buscarDefinicao.json();
-        const definitionXML = definicaoEncontrada[0].xml;
-        definicao = definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim();
-        //definicaoHtml.textContent = `definicão: ${definitionXML.substring(definitionXML.indexOf('<def>') + '<def>'.length, definitionXML.indexOf('</def>')).trim()}`
-        console.log(definicao);*/
 
         const dicionario = await fetch('bd/palavrasSemClassificacao.json');
-        //const dicionario = await fetch('../bd/palavrasSemClassificacao.json');
         const palavras = await dicionario.json();
 
         const palavraAleatoria = Math.floor((Math.random()*3818)+1);
@@ -205,88 +192,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 palavraAcentuada.push(letra);
             }
         }
-        palavraSoletrada = palavraAcentuada.join();
+        palavraSoletrada = palavraAcentuada.join('');
     }
-
-    /*function acentuarVogal(palavra){
-        let arrayLetras = palavra.split(' ');
-        let palavraAcentuada = '';
-        let isAcento = false;
-        let acento = '';
-        const teste = ['a','b','agudo','a','l','o'];
-        for(i in arrayLetras){
-            if(arrayLetras[i] == 'agudo' || arrayLetras[i] == 'circunflexo' || arrayLetras[i] == 'crase' || arrayLetras[i] == 'til' || arrayLetras[i] == 'tio' || arrayLetras[i] == 'tiu'){
-                acento = arrayLetras[i];
-                console.log('acento:' +acento);
-                isAcento = true;
-            }
-            else{
-                if(isAcento){
-                    palavraAcentuada += vogalAcentuada(acento, arrayLetras[i]);
-                    isAcento = false;
-                }    
-                else
-                    palavraAcentuada += arrayLetras[i];
-            }
-        }
-        palavraSoletrada = palavraAcentuada;
-    }
-
-    function vogalAcentuada(acento, vogal){
-        let vogalAcentuada = ''
-        if(acento == 'agudo'){
-            switch(vogal){
-                case 'a':
-                    vogalAcentuada = 'á';
-                break;
-                case 'e':
-                case 'é':
-                    vogalAcentuada = 'é';
-                break;
-                case 'i':
-                    vogalAcentuada = 'í';
-                break;
-                case 'o':
-                    vogalAcentuada = 'ó';
-                break;
-                case 'u':
-                    vogalAcentuada = 'ú';
-                break;
-            }
-        }
-        if(acento == 'crase'){
-            switch(vogal){
-                case 'a':
-                    vogalAcentuada = 'à';
-                break;
-            }
-        }
-        if(acento == 'circunflexo'){
-            switch(vogal){
-                case 'a':
-                    vogalAcentuada = 'â';
-                break;
-                case 'e':
-                case 'é':
-                    vogalAcentuada = 'ê';
-                break;
-                case 'o':
-                    vogalAcentuada = 'ô';
-                break;    
-            }
-        }
-        if(acento == 'til' || acento == 'tio' || acento == 'tiu'){
-            switch(vogal){
-                case 'a':
-                    vogalAcentuada = 'ã';
-                break;
-                case 'e':
-                    vogalAcentuada = 'õ';
-                break;
-            }
-        }
-        return vogalAcentuada;
-    }*/
 
     // Verificar se a Web Speech API é suportada
     if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
