@@ -180,8 +180,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const arrayLetras = palavra.split(' ');
         let palavraAcentuada = [];
         for (let i = 0; i < arrayLetras.length; i++) {
-            const letra = arrayLetras[i];
+            let letra = arrayLetras[i];
             const proximo = arrayLetras[i + 1];
+
+            if(letra == 'hífen'){
+                letra = '-';
+            }   //caso seja reconhecida a letra acentuada, remove o acento
+            if(letra == 'é'){
+                letra = 'e';
+            }   //caso seja reconhecida a letra acentuada, remove o acento
+                
+            if(letra == 'ó'){
+                letra = 'o'; 
+            }
+
             const combinacao = `${letra} ${proximo}`.toLowerCase();
 
             if (mapaAcentos[combinacao]) {
