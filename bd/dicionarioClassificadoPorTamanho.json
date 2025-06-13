@@ -349,14 +349,9 @@
             {"palavra":"acuado","significado":"Situação difícil sem saída; beco sem saída."},
             {"palavra":"flores","significado":"Parte das plantas onde se encontram os órgãos de reprodução."},
             {"palavra":"câncer","significado":"Doença caracterizada por crescimento celular anormal."},
-
-            
-
             {"palavra":"pôlder","significado":"Terreno baixo recuperado do mar."},
             {"palavra":"quórum","significado":"Número mínimo de membros presentes para validade de uma reunião."},
-            
-            {"palavra":"quadro","significado":"Superfície limitada por uma moldura, usada para pintar ou desenhar."},
-            
+            {"palavra":"quadro","significado":"Superfície limitada por uma moldura, usada para pintar ou desenhar."},     
             {"palavra":"fóssil","significado":"Resto ou vestígio de organismo preservado."},
             {"palavra":"jângal","significado":"Mata densa e intrincada."},
             {"palavra":"mártir","significado":"Pessoa que sofre ou morre por suas crenças."},
@@ -398,22 +393,17 @@
             {"palavra":"cômico","significado":"Que provoca riso."},
             {"palavra":"fático","significado":"Relativo a fatos."},
             {"palavra":"gótico","significado":"Estilo artístico da Idade Média."},
-            
-           
-           
             {"palavra":"abismo","significado":"Profundidade imensa."},
             {"palavra":"acervo","significado":"Conjunto de bens ou valores."},
             {"palavra":"âncora","significado":"Objeto pesado usado para fixar embarcações."},
-            {"palavra":"áspero","significado":"Que não é liso."},
-            
+            {"palavra":"áspero","significado":"Que não é liso."},            
             {"palavra":"cálice","significado":"Copo para beber, geralmente com haste."},
             {"palavra":"cânone","significado":"Regra, norma."},
             {"palavra":"cárcere","significado":"Prisão."},
             {"palavra":"cético","significado":"Que duvida ou não acredita."},
             {"palavra":"círculo","significado":"Figura geométrica plana."},
             {"palavra":"cônjuge","significado":"Cada um dos parceiros em um casamento."},
-            {"palavra":"crônica","significado":"Relato de eventos em ordem cronológica."},
-            
+            {"palavra":"crônica","significado":"Relato de eventos em ordem cronológica."},         
             {"palavra":"êxtase","significado":"Estado de grande alegria ou admiração."},
             {"palavra":"gênese","significado":"Origem, princípio."},
             {"palavra":"gôndola","significado":"Pequena embarcação a remo (em Veneza)."},
@@ -424,8 +414,7 @@
             {"palavra":"lábaro","significado":"Estandarte militar romano."},
             {"palavra":"náufrago","significado":"Sobrevivente de um naufrágio."},
             {"palavra":"nômade","significado":"Que não tem habitação fixa."},
-            {"palavra":"pálido","significado":"Com pouca cor."},
-           
+            {"palavra":"pálido","significado":"Com pouca cor."},           
             {"palavra":"pérfido","significado":"Que trai a confiança."},
             {"palavra":"pétala","significado":"Cada uma das folhas que formam a corola de uma flor."},
             {"palavra":"plátano","significado":"Árvore de grande porte."},
@@ -443,8 +432,7 @@
             {"palavra":"vértice","significado":"Ponto de encontro de linhas ou arestas."},
             {"palavra":"víbora","significado":"Serpente venenosa."},
             {"palavra":"vínculo","significado":"Laço, ligação."},
-            {"palavra":"zéfiro","significado":"Vento suave e agradável."},
-           
+            {"palavra":"zéfiro","significado":"Vento suave e agradável."},          
             {"palavra":"médium","significado":"Pessoa que alega comunicar-se com espíritos."},
             {"palavra":"sínodo","significado":"Assembleia eclesiástica."},
             {"palavra":"búfalo","significado":"Mamífero bovino de grande porte."},
@@ -454,8 +442,7 @@
             {"palavra":"júpiter","significado":"Maior planeta do sistema solar."},
             {"palavra":"magnólia","significado":"Árvore com grandes flores perfumadas."},
             {"palavra":"narciso","significado":"Planta com flores brancas ou amarelas."},
-            {"palavra":"papiro","significado":"Planta aquática usada para fazer papel."},
-            
+            {"palavra":"papiro","significado":"Planta aquática usada para fazer papel."},           
             {"palavra":"sândalo","significado":"Árvore aromática."},
             {"palavra":"tártaro","significado":"Depósito calcário nos dentes."},
             {"palavra":"tópico","significado":"Assunto, tema."},
@@ -465,11 +452,9 @@
             {"palavra":"xilofone","significado":"Instrumento musical de percussão."},
             {"palavra":"zodíaco","significado":"Faixa celeste com doze constelações."},
             {"palavra":"déficit","significado":"Resultado negativo em contas."},
-            {"palavra":"zênite","significado":"Ponto mais alto da esfera celeste."},
-            
+            {"palavra":"zênite","significado":"Ponto mais alto da esfera celeste."},            
             {"palavra":"cálice","significado":"Copo para beber."},
-            {"palavra":"hóspede","significado":"Pessoa que se hospeda."},
-           
+            {"palavra":"hóspede","significado":"Pessoa que se hospeda."},           
             {"palavra":"júbilo","significado":"Alegria intensa."},
             {"palavra":"mármore","significado":"Rocha metamórfica."},
             {"palavra":"pântano","significado":"Terreno alagadiço."},
@@ -809,10 +794,8 @@
             {"palavra":"romance","significado":"Narrativa longa de ficção."},
             {"palavra":"melodia","significado":"Sucessão ritmada de sons que compõem uma peça musical."},
             {"palavra":"acorde","significado":"Conjunto de três ou mais notas musicais tocadas simultaneamente."},
-            {"palavra":"cinema","significado":"Arte de produzir filmes; local de exibição de filmes."},
-            
-            {"palavra":"notícia","significado":"Informação sobre um fato recente; reportagem jornalística."},
-           
+            {"palavra":"cinema","significado":"Arte de produzir filmes; local de exibição de filmes."},            
+            {"palavra":"notícia","significado":"Informação sobre um fato recente; reportagem jornalística."},           
             {"palavra":"gráfico","significado":"Representação visual de dados por meio de linhas, barras, etc."},
             {"palavra":"diagrama","significado":"Desenho esquemático que representa um sistema, processo ou estrutura."},
             {"palavra":"trajeto","significado":"Caminho percorrido ou a ser percorrido de um ponto a outro."},
@@ -905,8 +888,7 @@
             {"palavra":"tradutor","significado":"Profissional que converte texto ou fala de uma língua para outra."},
             {"palavra":"sintaxe","significado":"Parte da gramática que estuda a relação entre as palavras na frase."},
             {"palavra":"fonética","significado":"Estudo dos sons da fala."},
-            {"palavra":"discurso","significado":"Uso da linguagem em uma situação comunicativa; exposição oral sobre um tema."},
-           
+            {"palavra":"discurso","significado":"Uso da linguagem em uma situação comunicativa; exposição oral sobre um tema."},           
             {"palavra":"orador","significado":"Pessoa que faz discursos em público."},
             {"palavra":"plateia","significado":"Conjunto de espectadores de um espetáculo; público."},
             {"palavra":"debate","significado":"Discussão organizada sobre um tema, com diferentes pontos de vista."},
@@ -954,8 +936,7 @@
             {"palavra":"arrogar","significado":"Atribuir a si mesmo (direito, qualidade) sem fundamento."},
             {"palavra":"assolar","significado":"Causar destruição ou ruína; devastar."},
             {"palavra":"atenuar","significado":"Tornar tênue, fraco; diminuir a intensidade."},
-            {"palavra":"atiçar","significado":"Excitar, estimular; avivar (fogo)."},
-            
+            {"palavra":"atiçar","significado":"Excitar, estimular; avivar (fogo)."},            
             {"palavra":"autuar","significado":"Registrar em auto (processo); aplicar multa."},
             {"palavra":"avalizar","significado":"Dar aval a; garantir o pagamento de."},
             {"palavra":"aviltar","significado":"Tornar vil, rebaixar; degradar."},
@@ -975,8 +956,7 @@
             {"palavra":"coagular","significado":"Passar do estado líquido para o sólido ou semissólido (sangue, leite)."},
             {"palavra":"coalhar","significado":"Coagular (leite); encher-se de; abarrotar."},
             {"palavra":"coartar","significado":"Restringir, limitar; reprimir."},
-            {"palavra":"cobiçar","significado":"Desejar ardentemente possuir (o que é de outrem)."},
-           
+            {"palavra":"cobiçar","significado":"Desejar ardentemente possuir (o que é de outrem)."},           
             {"palavra":"cogitar","significado":"Pensar em, considerar; planejar."},
             {"palavra":"coibir","significado":"Reprimir, proibir; impedir."},
             {"palavra":"colmatar","significado":"Preencher (lacuna); aterrar com depósito de aluvião."},
@@ -984,8 +964,7 @@
             {"palavra":"comutar","significado":"Substituir uma pena por outra menos severa; trocar."},
             {"palavra":"concitar","significado":"Incitar, estimular; promover."},
             {"palavra":"condizer","significado":"Estar de acordo, combinar; ser compatível."},
-            {"palavra":"conluiar","significado":"Fazer conluio; combinar secretamente."},
-            
+            {"palavra":"conluiar","significado":"Fazer conluio; combinar secretamente."},            
             {"palavra":"consumar","significado":"Realizar completamente; terminar; praticar (ato)."},
             {"palavra":"conviver","significado":"Viver junto com outros; ter familiaridade."},
             {"palavra":"convolar","significado":"Contrair (novo casamento); mudar de estado."},
@@ -1052,9 +1031,7 @@
             {"palavra":"instalar","significado":"Fixar em determinado lugar; estabelecer; montar (aparelho)."},
             {"palavra":"instigar","significado":"Incitar, estimular; provocar."},
             {"palavra":"insuflar","significado":"Soprar para dentro; incutir (ideia, sentimento); instigar."},
-            {"palavra":"intervir","significado":"Vir para o meio; participar; mediar; interceder."},
-           
-            
+            {"palavra":"intervir","significado":"Vir para o meio; participar; mediar; interceder."},      
             {"palavra":"intubar","significado":"Introduzir tubo em (órgão, cavidade)."},
             {"palavra":"inundar","significado":"Cobrir com água; alagar; encher completamente."},
             {"palavra":"inverter","significado":"Mudar a ordem ou posição de; trocar."},
@@ -1066,8 +1043,7 @@
             {"palavra":"isolar","significado":"Pôr à parte; separar; proteger (do frio, calor, eletricidade)."},
             {"palavra":"iterar","significado":"Repetir; fazer novamente."},
             {"palavra":"jorrar","significado":"Sair com força e abundância (líquido); brotar."},
-            {"palavra":"justapor","significado":"Pôr lado a lado; aproximar."},
-           
+            {"palavra":"justapor","significado":"Pôr lado a lado; aproximar."},           
             {"palavra":"lambuzar","significado":"Suja-se ou sujar alguém com substância pegajosa."},
             {"palavra":"lampejar","significado":"Brilhar intermitentemente; relampejar."},
             {"palavra":"lapidar","significado":"Trabalhar (pedra preciosa); aperfeiçoar (texto, estilo)."},
@@ -1079,16 +1055,14 @@
             {"palavra":"linear","significado":"Relativo a linha; reto; direto; que segue uma sequência."},
             {"palavra":"liquidar","significado":"Reduzir a líquido; pagar dívida; acabar com; vender rapidamente."},
             {"palavra":"litigar","significado":"Disputar em juízo; pleitear."},
-            {"palavra":"lograr","significado":"Conseguir, obter; lograr êxito; enganar, ludibriar."},
-            
+            {"palavra":"lograr","significado":"Conseguir, obter; lograr êxito; enganar, ludibriar."},            
             {"palavra":"macerar","significado":"Amolecer ou extrair substâncias deixando em líquido; mortificar."},
             {"palavra":"maquinar","significado":"Tramar, conspirar; planejar secretamente."},
             {"palavra":"mastigar","significado":"Triturar alimentos com os dentes; pensar demoradamente em."},
             {"palavra":"medrar","significado":"Crescer com vigor; prosperar."},
             {"palavra":"moderar","significado":"Tornar moderado; diminuir o excesso de; conter-se."},
             {"palavra":"municiar","significado":"Fornecer munição a; abastecer; prover."},
-            {"palavra":"murmurar","significado":"Produzir murmúrio; queixar-se em voz baixa; cochichar."},
-          
+            {"palavra":"murmurar","significado":"Produzir murmúrio; queixar-se em voz baixa; cochichar."},          
             {"palavra":"navegar","significado":"Viajar por água em embarcação; explorar a internet."},
             {"palavra":"obcecar","significado":"Causar obsessão; cegar (paixão, ideia fixa)."},
             {"palavra":"onerar","significado":"Pôr ônus em; sobrecarregar; tributar."},
@@ -1104,8 +1078,7 @@
             {"palavra":"pinçar","significado":"Segurar com pinça; apanhar com delicadeza."},
             {"palavra":"pisotear","significado":"Pisar repetidamente em; espezinhar; humilhar."},
             {"palavra":"plagiar","significado":"Copiar obra alheia e apresentá-la como própria."},
-            {"palavra":"ponderar","significado":"Pesar, considerar com atenção; refletir."},
-           
+            {"palavra":"ponderar","significado":"Pesar, considerar com atenção; refletir."},          
             {"palavra":"precaver","significado":"Tomar precauções; prevenir-se."},
             {"palavra":"predicar","significado":"Fazer sermão; pregar; anunciar."},
             {"palavra":"premunir","significado":"Preparar, prevenir; acautelar."},
@@ -1116,8 +1089,7 @@
             {"palavra":"protelar","significado":"Adiar, postergar; prolongar."},
             {"palavra":"pungir","significado":"Ferir com ponta; picar; causar dor ou sofrimento."},
             {"palavra":"reciclar","significado":"Converter resíduos em novos produtos; atualizar conhecimentos."},
-            {"palavra":"relegar","significado":"Enviar para lugar distante; deixar em segundo plano; desprezar."},
-            
+            {"palavra":"relegar","significado":"Enviar para lugar distante; deixar em segundo plano; desprezar."},            
             {"palavra":"renegar","significado":"Renunciar a (crença, princípio); negar; rejeitar."},
             {"palavra":"reprimir","significado":"Conter, refrear; punir quem se revolta."},
             {"palavra":"retaliar","significado":"Revida a ofensa ou dano com outro igual; vingar-se."},
@@ -1146,13 +1118,11 @@
             {"palavra":"vorejar","significado":"Girar como redemoinho (vento); agitar-se."},
             {"palavra":"zapear","significado":"Mudar rapidamente de canal de TV; navegar aleatoriamente (internet)."},
             {"palavra":"abrasar","significado":"Reduzir a brasa; queimar; inflamar; consumir."},
-
             {"palavra":"aceder","significado":"Consentir, anuir; ter acesso a; atingir."},
             {"palavra":"aclamar","significado":"Saudar com aplausos; aclamar (rei, herói)."},
             {"palavra":"acoimar","significado":"Impor coima (multa); censurar, repreender."},
             {"palavra":"acometer","significado":"Atacar, investir contra; assaltar (doença, crise)."},
-            {"palavra":"acossar","significado":"Perseguir de perto; importunar, vexar."},
-            
+            {"palavra":"acossar","significado":"Perseguir de perto; importunar, vexar."},            
             {"palavra":"adornar","significado":"Enfeitar, decorar; aformosear."},
             {"palavra":"adular","significado":"Lisonjear de forma exagerada para obter favor."},
             {"palavra":"advento","significado":"Chegada, vinda."},
@@ -1163,8 +1133,7 @@
             {"palavra":"agravar","significado":"Tornar grave; piorar; aumentar (pena, imposto)."},
             {"palavra":"agredir","significado":"Atacar, investir contra; ofender."},
             {"palavra":"ajoelhar","significado":"Pôr-se de joelhos."},
-            {"palavra":"ajuizar","significado":"Formar juízo sobre; julgar; avaliar."},
-            
+            {"palavra":"ajuizar","significado":"Formar juízo sobre; julgar; avaliar."},            
             {"palavra":"aleijar","significado":"Causar aleijão em; mutilar; tornar coxo."},
             {"palavra":"aleitar","significado":"Alimentar com leite; amamentar."},
             {"palavra":"aliciar","significado":"Atrair com promessas falsas; alugar para serviço; recrutar."},
@@ -1194,10 +1163,8 @@
             {"palavra":"anelar","significado":"Formar anéis; desejar ardentemente; almejar."},
             {"palavra":"angariar","significado":"Conseguir por meio de diligências; obter (apoio, fundos)."},
             {"palavra":"anichar","significado":"Pôr em nicho; abrigar; aconchegar-se."},
-            {"palavra":"anidro","significado":"Que não contém água; seco."},
-           
-            {"palavra":"anomalia","significado":"Irregularidade, anormalidade."},
-            
+            {"palavra":"anidro","significado":"Que não contém água; seco."},           
+            {"palavra":"anomalia","significado":"Irregularidade, anormalidade."},            
             {"palavra":"antever","significado":"Ver antes; prever; pressentir."},
             {"palavra":"antônimo","significado":"Palavra de sentido oposto a outra."},
             {"palavra":"anular","significado":"Tornar nulo; invalidar; cancelar."},
@@ -1205,8 +1172,7 @@
             {"palavra":"apenar","significado":"Punir com pena; condenar; afligir."},
             {"palavra":"apensar","significado":"Juntar, anexar (documentos); apensar (processo)."},
             {"palavra":"apetecer","significado":"Ter apetite por; desejar; agradar."},
-            {"palavra":"aplaudir","significado":"Manifestar aprovação com aplausos; louvar."},
-           
+            {"palavra":"aplaudir","significado":"Manifestar aprovação com aplausos; louvar."},           
             {"palavra":"aplicar","significado":"Pôr em prática; utilizar; aplicar (multa); dedicar-se."},
             {"palavra":"apócrifo","significado":"De autenticidade duvidosa; falso."},
             {"palavra":"apogeu","significado":"Ponto mais alto; auge; apogeu (Lua)."},
@@ -1214,15 +1180,13 @@
             {"palavra":"apologia","significado":"Discurso em defesa de; elogio."},
             {"palavra":"aportar","significado":"Chegar a porto; desembarcar; chegar a algum lugar."},
             {"palavra":"aprazar","significado":"Marcar prazo para; fixar data."},
-            {"palavra":"apreçar","significado":"Pôr preço em; avaliar."},
-           
+            {"palavra":"apreçar","significado":"Pôr preço em; avaliar."},           
             {"palavra":"arcaico","significado":"Relativo a época antiga; antigo; obsoleto."},
             {"palavra":"arcanjo","significado":"Anjo de ordem superior."},
             {"palavra":"arquejar","significado":"Respirar com dificuldade; ofegar."},
             {"palavra":"arraigar","significado":"Criar raízes; fixar-se; consolidar-se."},
             {"palavra":"arrancar","significado":"Tirar com raiz; extirpar; obter com esforço."},
-            {"palavra":"arrendar","significado":"Tomar ou dar em arrendamento (aluguel)."},
-            
+            {"palavra":"arrendar","significado":"Tomar ou dar em arrendamento (aluguel)."},            
             {"palavra":"arrochar","significado":"Apertar com arrocho; apertar excessivamente (parafuso); dificultar."},
             {"palavra":"arruinar","significado":"Causar ruína em; destruir; empobrecer; fracassar."},
             {"palavra":"asilar","significado":"Dar asilo a; proteger; recolher-se em asilo."},
@@ -1263,8 +1227,7 @@
             {"palavra":"vegetar","significado":"Viver como vegetal; levar vida ociosa e monótona; desenvolver-se (planta)."},
             {"palavra":"vencilho","significado":"Laço, nó corrediço; embaraço."},
             {"palavra":"vencer","significado":"Derrotar em luta ou competição; superar; conquistar; expirar (prazo)."},
-            {"palavra":"vendar","significado":"Cobrir com venda; vendar (olhos)."},
-            
+            {"palavra":"vendar","significado":"Cobrir com venda; vendar (olhos)."},            
             {"palavra":"verter","significado":"Derramar, entornar; traduzir; escorrer."},
             {"palavra":"vicejar","significado":"Desenvolver-se com vigor; prosperar."},
             {"palavra":"viciar","significado":"Tornar vicioso; corromper; adulterar; adquirir vício."},
@@ -1340,8 +1303,7 @@
             {"palavra":"vibração","significado":"Movimento rápido de vai e vem; tremor; emoção."},
             {"palavra":"molécula","significado":"Grupo de átomos ligados; menor porção de substância com suas propriedades."},
             {"palavra":"composto","significado":"Substância formada por dois ou mais elementos; mistura; complexo."},
-            {"palavra":"mistura","significado":"Combinação de substâncias sem que haja reação química; confusão."},
-            
+            {"palavra":"mistura","significado":"Combinação de substâncias sem que haja reação química; confusão."},            
             {"palavra":"enzima","significado":"Molécula orgânica que atua como catalisador em reações biológicas."},
             {"palavra":"produto","significado":"Resultado de reação química; aquilo que é produzido."},
             {"palavra":"reagente","significado":"Substância que participa de reação química; que reage."},
@@ -1365,16 +1327,13 @@
             {"palavra":"extranet","significado":"Rede que permite acesso a usuários externos autorizados."},
             {"palavra":"intranet","significado":"Rede privada de computadores de uma organização."},
             {"palavra":"conexão","significado":"Ato de conectar; ligação; vínculo."},
-            {"palavra":"largura","significado":"Dimensão de algo de um lado a outro; amplitude."},
-           
+            {"palavra":"largura","significado":"Dimensão de algo de um lado a outro; amplitude."},           
             {"palavra":"acesso","significado":"Ato de acessar; entrada; direito de usar ou ver."},
             {"palavra":"registro","significado":"Ato de registrar; anotação; documento que comprova algo."},
-            {"palavra":"métrica","significado":"Medida; padrão de medida; em poesia, estrutura do verso."},
-            
+            {"palavra":"métrica","significado":"Medida; padrão de medida; em poesia, estrutura do verso."},            
             {"palavra":"depurar","significado":"Remover impurezas de; corrigir erros em programa de computador."},
             {"palavra":"compilar","significado":"Converter código fonte em código executável."},
-            {"palavra":"versão","significado":"Variante de algo; edição; ponto de vista."},
-            
+            {"palavra":"versão","significado":"Variante de algo; edição; ponto de vista."},            
             {"palavra":"maquinal","significado":"Relativo a máquina; feito por máquina; automático; irrefletido."},
             {"palavra":"reforço","significado":"Ato ou efeito de reforçar; fortalecimento; em machine learning, tipo de aprendizagem por tentativa e erro."},
             {"palavra":"neural","significado":"Relativo a nervos; em machine learning, inspirado na estrutura do cérebro."},
@@ -1416,8 +1375,7 @@
             {"palavra":"acenar","significado":"Fazer sinal com a cabeça ou mão; indicar."},
             {"palavra":"acerbar","significado":"Tornar acerbo (áspero, cruel); agravar; irritar."},
             {"palavra":"acicatar","significado":"Esporear (cavalo); estimular, incitar."},
-            {"palavra":"aclarar","significado":"Tornar claro; esclarecer; iluminar."},
-           
+            {"palavra":"aclarar","significado":"Tornar claro; esclarecer; iluminar."},           
             {"palavra":"acorçoar","significado":"Dar coragem a; animar; encorajar."},
             {"palavra":"açular","significado":"Incitar (cão) a atacar; atiçar; estimular."},
             {"palavra":"adejar","significado":"Mover as asas sem sair do lugar; esvoaçar; pairar."},
@@ -1432,8 +1390,7 @@
             {"palavra":"adumar","significado":"Fumar (carne, peixe) para conservar."},
             {"palavra":"adunco","significado":"Curvo em forma de gancho (nariz)."},
             {"palavra":"adubar","significado":"Aplicar adubo em; fertilizar; temperar comida."},
-            {"palavra":"aduzir","significado":"Trazer, conduzir; apresentar (argumento, prova)."},
-            
+            {"palavra":"aduzir","significado":"Trazer, conduzir; apresentar (argumento, prova)."},            
             {"palavra":"afagar","significado":"Fazer carinhos em; acariciar; consolar."},
             {"palavra":"afastar","significado":"Pôr ou ficar distante; remover; desviar."},
             {"palavra":"aferir","significado":"Comparar com padrão para verificar exatidão; medir; avaliar."},
@@ -1456,11 +1413,9 @@
             {"palavra":"aldeia","significado":"Pequeno agrupamento humano; povoação rural."},
             {"palavra":"alegrar","significado":"Tornar alegre; regozijar; divertir-se."},
             {"palavra":"alento","significado":"Respiração; ânimo, coragem; vigor."},
-            {"palavra":"alerta","significado":"Em estado de atenção; sinal de perigo."},
-           
+            {"palavra":"alerta","significado":"Em estado de atenção; sinal de perigo."},          
             {"palavra":"alfazema","significado":"Planta aromática; cor violeta clara."},
-            {"palavra":"algema","significado":"Argola de metal para prender pulsos."},
-            
+            {"palavra":"algema","significado":"Argola de metal para prender pulsos."},            
             {"palavra":"alicerce","significado":"Parte da construção que fica sob o solo; base, fundamento."},
             {"palavra":"alijar","significado":"Lançar carga ao mar para aliviar peso; livrar-se de; abandonar."},
             {"palavra":"aliterar","significado":"Usar aliteração em."},
@@ -1492,7 +1447,6 @@
             {"palavra":"anatomia","significado":"Ciência que estuda a estrutura dos seres vivos; constituição."},
             {"palavra":"ancião","significado":"Pessoa idosa; velho."},
             {"palavra":"anélito","significado":"Hálito, bafo."},
-
             {"palavra":"anemia","significado":"Diminuição do número de glóbulos vermelhos no sangue."},
             {"palavra":"anfíbio","significado":"Animal que vive na água e na terra; veículo que se move na água e em terra."},
             {"palavra":"angina","significado":"Inflamação da garganta; dor no peito por falta de oxigênio ao coração."},
@@ -1511,12 +1465,9 @@
             {"palavra":"antídoto","significado":"Substância que neutraliza veneno."},
             {"palavra":"antigo","significado":"Que existe há muito tempo; velho; passado."},
             {"palavra":"antílope","significado":"Mamífero ruminante semelhante ao veado."},
-            {"palavra":"antípoda","significado":"Ponto da Terra diametralmente oposto; pessoa com ideias opostas."},
-       
-            {"palavra":"anuência","significado":"Ato de anuir; consentimento."},
-           
-            {"palavra":"apanhar","significado":"Pegar, colher; surpreender; apanhar (doença); sofrer."},
-            
+            {"palavra":"antípoda","significado":"Ponto da Terra diametralmente oposto; pessoa com ideias opostas."},       
+            {"palavra":"anuência","significado":"Ato de anuir; consentimento."},           
+            {"palavra":"apanhar","significado":"Pegar, colher; surpreender; apanhar (doença); sofrer."},            
             {"palavra":"aparatar","significado":"Pôr aparato em; enfeitar com luxo."},
             {"palavra":"aparato","significado":"Esplendor, luxo; conjunto de aparelhos; organização."},
             {"palavra":"aparição","significado":"Ato de aparecer; fantasma; surgimento."},
@@ -1532,8 +1483,7 @@
             {"palavra":"apontar","significado":"Indicar com o dedo; anotar; afiar (lápis); surgir."},
             {"palavra":"aposição","significado":"Termo que se junta a outro para explicá-lo ou determiná-lo (gramática)."},
             {"palavra":"apoteose","significado":"Glorificação; ponto culminante; consagração."},
-            {"palavra":"aprazer","significado":"Causar prazer; agradar."},
-            
+            {"palavra":"aprazer","significado":"Causar prazer; agradar."},            
             {"palavra":"apressar","significado":"Tornar rápido; acelerar; dar-se pressa."},
             {"palavra":"aprovar","significado":"Dar aprovação a; consentir em; validar."},
             {"palavra":"aprumar","significado":"Pôr a prumo; endireitar; aprumar-se (melhorar comportamento)."},
@@ -1588,7 +1538,6 @@
             {"palavra":"avenida","significado":"Via pública larga e geralmente arborizada."},
             {"palavra":"aviação","significado":"Arte ou ciência de voar; conjunto de aeronaves."},
             {"palavra":"avidez","significado":"Qualidade de ávido; desejo intenso; ganância."},
-
             {"palavra":"avistar","significado":"Ver ao longe; vislumbrar."},
             {"palavra":"avivar","significado":"Tornar vivo; reanimar; atiçar (fogo); realçar."},
             {"palavra":"avultar","significado":"Tornar vultoso; aumentar; destacar-se."},
@@ -1599,8 +1548,7 @@
             {"palavra":"badalar","significado":"Bater o badalo (sino); tocar repetidamente; divulgar, apregoar."},
             {"palavra":"baderna","significado":"Desordem, tumulto; confusão."},
             {"palavra":"bailar","significado":"Dançar."},
-            {"palavra":"baixela","significado":"Conjunto de pratos, copos, talheres, etc."},
-            
+            {"palavra":"baixela","significado":"Conjunto de pratos, copos, talheres, etc."},            
             {"palavra":"baixio","significado":"Lugar pouco profundo em rio ou mar; banco de areia."},
             {"palavra":"balaio","significado":"Cesto grande."},
             {"palavra":"balear","significado":"Atirar com bala em; ferir com bala."},
@@ -1617,9 +1565,7 @@
             {"palavra":"barricar","significado":"Pôr barricadas em; obstruir."},
             {"palavra":"barreira","significado":"Obstáculo; limite; dificuldade."},
             {"palavra":"basbaque","significado":"Pessoa ingênua e pasmada; Que ou quem passa o tempo a olhar longamente para tudo que vê."},
-
-            {"palavra":"bastião","significado":"Parte da fortificação; fortaleza; defensor."},
-            
+            {"palavra":"bastião","significado":"Parte da fortificação; fortaleza; defensor."},            
             {"palavra":"batedor","significado":"Que bate; que percorre terreno em busca de algo; aparelho para bater."},
             {"palavra":"batizar","significado":"Administrar o batismo; dar nome a; estrear."},
             {"palavra":"batocar","significado":"Pôr batoque em (barril); tapar."},
@@ -1629,12 +1575,10 @@
             {"palavra":"beldade","significado":"Qualidade de belo; mulher muito bonita."},
             {"palavra":"belicoso","significado":"Que gosta de guerra; guerreiro; agressivo."},
             {"palavra":"bendizer","significado":"Dizer bem de; louvar; benzer."},
-            {"palavra":"benesse","significado":"Benefício, vantagem; privilégio."},
-            
+            {"palavra":"benesse","significado":"Benefício, vantagem; privilégio."},            
             {"palavra":"benzer","significado":"Invocar proteção divina sobre; benzer (comida); abençoar."},
             {"palavra":"bequadro","significado":"Sinal gráfico musical que anula efeito de sustenido ou bemol."},
-            {"palavra":"berrante","significado":"Que berra muito; que tem cor forte e chamativa."},
-            
+            {"palavra":"berrante","significado":"Que berra muito; que tem cor forte e chamativa."},            
             {"palavra":"bicolor","significado":"Com duas cores."},
             {"palavra":"bifurcar","significado":"Dividir-se em dois ramos; ramificar-se."},
             {"palavra":"bigorna","significado":"Peça de metal onde se forja outro metal."},
@@ -1656,8 +1600,7 @@
             {"palavra":"bonança","significado":"Calmaria no mar; tranquilidade; prosperidade."},
             {"palavra":"boneco","significado":"Figura humana ou animal para brincar; pessoa sem vontade própria."},
             {"palavra":"borracha","significado":"Material elástico; peça para apagar."},
-            {"palavra":"borrar","significado":"Manchar com tinta; sujar; borrar (escrita)."},
-           
+            {"palavra":"borrar","significado":"Manchar com tinta; sujar; borrar (escrita)."},           
             {"palavra":"botânica","significado":"Ciência que estuda as plantas."},
             {"palavra":"bradar","significado":"Gritar, clamar; protestar."},
             {"palavra":"bramar","significado":"Dar bramidos (animais); rugir (mar); gritar."},
@@ -1668,8 +1611,7 @@
             {"palavra":"brocar","significado":"Perfurar com broca; furar."},
             {"palavra":"brochar","significado":"Furar (orelha); encadernar com brochura."},
             {"palavra":"bromear","significado":"Zombar, caçoar."},
-            {"palavra":"bronzear","significado":"Dar cor de bronze a; tostar (pelo sol)."},
-           
+            {"palavra":"bronzear","significado":"Dar cor de bronze a; tostar (pelo sol)."},          
             {"palavra":"brunir","significado":"Polir, lustrar; aperfeiçoar."},
             {"palavra":"burlar","significado":"Enganar, defraudar; zombar."},
             {"palavra":"bússola","significado":"Instrumento para orientação por meio de agulha magnetizada."},
@@ -1700,15 +1642,12 @@
             {"palavra":"aleluia","significado":"Expressão de alegria religiosa; cântico de louvor."},
             {"palavra":"alergia","significado":"Reação exagerada do organismo a substância estranha."},
             {"palavra":"alfabeto","significado":"Conjunto de letras de uma língua."},
-            {"palavra":"alface","significado":"Hortaliça de folhas comestíveis."},
-         
+            {"palavra":"alface","significado":"Hortaliça de folhas comestíveis."},         
             {"palavra":"alicate","significado":"Ferramenta para apertar ou cortar fios."},
             {"palavra":"alimento","significado":"Substância que nutre; comida."},
             {"palavra":"alopecia","significado":"Doença que provoca a queda dos cabelos ou dos pelos, podendo se manifestar de modo temporário ou permanente; falacrose, calvície."},
             {"palavra":"alizar","significado":"Faixa decorativa na parte inferior de parede; rodapé."},
-            {"palavra":"alocação","significado":"Ato de alocar; distribuição; atribuição."},
-         
-           
+            {"palavra":"alocação","significado":"Ato de alocar; distribuição; atribuição."},           
             {"palavra":"alpaca","significado":"Mamífero sul-americano; liga metálica."},
             {"palavra":"altercar","significado":"Discutir, brigar; contender."},
             {"palavra":"alternar","significado":"Revezar; suceder-se; variar."},
@@ -1728,11 +1667,8 @@
             {"palavra":"amiúde","significado":"Que ocorre de maneira repetida; repetidas vezes; com muita frequência."},
             {"palavra":"amoral","significado":"Que não tem senso moral; indiferente à moral."},
             {"palavra":"amorfo","significado":"Que não tem forma definida."},
-            {"palavra":"anagogia","significado":"Interpretação mística de texto; elevação da mente ao divino."},
-            
-            {"palavra":"anarquia","significado":"Ausência de governo; desordem."},
-            
-            
+            {"palavra":"anagogia","significado":"Interpretação mística de texto; elevação da mente ao divino."},            
+            {"palavra":"anarquia","significado":"Ausência de governo; desordem."},  
             {"palavra":"anódino","significado":"Que acalma a dor; inofensivo; insípido."},
             {"palavra":"anosmia","significado":"Perda ou diminuição do olfato."},
             {"palavra":"anotação","significado":"Ato de anotar; nota; registro."},
@@ -1850,13 +1786,11 @@
             {"palavra":"apetece","significado":"Que apetece; agrada."},
             {"palavra":"aplicado","significado":"Que foi aplicado; utilizado; diligente."},
             {"palavra":"apócrifo","significado":"De autenticidade duvidosa; falso."},
-
             {"palavra":"aportado","significado":"Que aportou; chegou."},
             {"palavra":"aprazado","significado":"Que foi aprazado; com data marcada."},
             {"palavra":"aprovado","significado":"Que foi aprovado; consentido; com nota suficiente."},
             {"palavra":"aprumado","significado":"Que está a prumo; reto; correto (comportamento)."},
-            {"palavra":"arriado","significado":"Que foi arriado; abaixado; caído; cansado."},
-            
+            {"palavra":"arriado","significado":"Que foi arriado; abaixado; caído; cansado."},           
             {"palavra":"arsenal","significado":"Depósito de armas; grande quantidade de recursos."},
             {"palavra":"asilado","significado":"Que buscou asilo; refugiado."},
             {"palavra":"aspirado","significado":"Que foi aspirado; inspirado; desejado."},
@@ -1880,20 +1814,16 @@
             {"palavra":"vencedor","significado":"Que ou quem venceu; vitorioso."},
             {"palavra":"vendado","significado":"Que tem os olhos vendados."},
             {"palavra":"vendaval","significado":"Vento muito forte; tempestade."},
-            {"palavra":"venenoso","significado":"Que contém veneno; tóxico; prejudicial."},
-            
+            {"palavra":"venenoso","significado":"Que contém veneno; tóxico; prejudicial."},            
             {"palavra":"venoso","significado":"Relativo a veias."},
-            {"palavra":"vergado","significado":"Que vergou; curvado; cedido."},
-            
+            {"palavra":"vergado","significado":"Que vergou; curvado; cedido."},           
             {"palavra":"vetado","significado":"Que foi vetado; proibido."},
             {"palavra":"vexado","significado":"Que sente vexame; envergonhado."},
             {"palavra":"vibração","significado":"Ato de vibrar; tremor; emoção."},
             {"palavra":"viciado","significado":"Que tem vício; corrompido."},
             {"palavra":"vicinal","significado":"Relativo a vizinhança; Que faz a ligação entre dois lugares, localidades ou povoações próximas."},
-            {"palavra":"zumbido","significado":"Ruído de zunido; barulho no ouvido."},
-      
+            {"palavra":"zumbido","significado":"Ruído de zunido; barulho no ouvido."},   
             {"palavra":"gerado","significado":"Que foi gerado; produzido."},
-
             {"palavra":"gerador","significado":"Máquina que transforma energia."},
             {"palavra":"geriatra","significado":"Médico especialista em geriatria."}    
         ],
@@ -1908,7 +1838,6 @@
             {"palavra":"bicicleta","significado":"Veículo de duas rodas movido a pedal."},
             {"palavra":"arcebispo","significado":"Bispo de arquidiocese."},
             {"palavra":"arquétipo","significado":"Modelo original."},
-
             {"palavra":"artifício","significado":"Meio astucioso para alcançar algo."},
             {"palavra":"blasfêmia","significado":"Palavra ou ato ofensivo à divindade."},
             {"palavra":"esplêndido","significado":"Magnífico, brilhante."},
@@ -2076,8 +2005,7 @@
             {"palavra":"continente","significado":"Grande massa de terra emersa, compreendendo vários países."},
             {"palavra":"horizonte","significado":"Linha onde o céu parece encontrar a terra ou o mar; limite da visão."},
             {"palavra":"asteroide","significado":"Pequeno corpo rochoso ou metálico que orbita o Sol."},
-            {"palavra":"tempestade","significado":"Fenômeno meteorológico com ventos fortes, chuva, raios e trovões."},
-            
+            {"palavra":"tempestade","significado":"Fenômeno meteorológico com ventos fortes, chuva, raios e trovões."},            
             {"palavra":"terremoto","significado":"Tremor da superfície terrestre causado por movimentos na crosta."},
             {"palavra":"primavera","significado":"Estação do ano entre o inverno e o verão."},
             {"palavra":"organismo","significado":"Ser vivo; conjunto de órgãos que compõem um ser vivo."},
@@ -2291,8 +2219,7 @@
             {"palavra":"interferir","significado":"Meter-se em; imiscuir-se; influenciar."},
             {"palavra":"intitular","significado":"Dar título a; nomear; arrogar-se o direito de."},
             {"palavra":"intoxicar","significado":"Causar intoxicação; envenenar; corromper."},
-            {"palavra":"intrometer","significado":"Meter-se onde não é chamado; imiscuir-se."},
-            
+            {"palavra":"intrometer","significado":"Meter-se onde não é chamado; imiscuir-se."},            
             {"palavra":"inutilizar","significado":"Tornar inútil; danificar; estragar."},
             {"palavra":"investigar","significado":"Buscar informações; pesquisar; apurar."},
             {"palavra":"lagartear","significado":"Andar ao sol como lagarto; vadiar."},
@@ -2363,8 +2290,7 @@
             {"palavra":"vivificar","significado":"Dar vida a; reanimar; tornar mais intenso."},
             {"palavra":"abster-se","significado":"Privar-se de; renunciar; evitar."},
             {"palavra":"aclimatar","significado":"Adaptar a novo clima ou meio; aclimatar-se."},
-            {"palavra":"aconselhar","significado":"Dar conselho a; sugerir; recomendar."},
-           
+            {"palavra":"aconselhar","significado":"Dar conselho a; sugerir; recomendar."},           
             {"palavra":"açambarcar","significado":"Comprar em grande quantidade para vender mais caro; monopolizar."},
             {"palavra":"admoestar","significado":"Advertir, repreender; aconselhar."},
             {"palavra":"adstringir","significado":"Apertar; contrair; limitar."},
@@ -2499,15 +2425,12 @@
             {"palavra":"engrenagem","significado":"Conjunto de rodas dentadas que transmitem movimento; organização complexa."},
             {"palavra":"plataforma","significado":"Superfície elevada e plana; base para algo; sistema operacional ou de software."},
             {"palavra":"interface","significado":"Superfície de contato entre dois meios ou sistemas; ponto de interação."},
-            {"palavra":"protótipo","significado":"Primeiro modelo de algo; modelo original."},
-            
+            {"palavra":"protótipo","significado":"Primeiro modelo de algo; modelo original."},            
             {"palavra":"segurança","significado":"Estado de quem ou do que está seguro; ausência de perigo; confiança."},
             {"palavra":"permissão","significado":"Ato de permitir; autorização."},
             {"palavra":"auditoria","significado":"Exame sistemático de contas ou procedimentos; inspeção."},
-            {"palavra":"relatório","significado":"Documento que relata fatos ou atividades; informe."},
-            
-            {"palavra":"indicador","significado":"Que indica; sinal; valor que representa desempenho."},
-            
+            {"palavra":"relatório","significado":"Documento que relata fatos ou atividades; informe."},            
+            {"palavra":"indicador","significado":"Que indica; sinal; valor que representa desempenho."},            
             {"palavra":"interface","significado":"Ponto de contato entre usuário e sistema; superfície de interação."},
             {"palavra":"refatorar","significado":"Reestruturar código de software sem alterar seu comportamento externo."},
             {"palavra":"manutenção","significado":"Ato ou efeito de manter; conservação; atividades para corrigir ou melhorar sistema existente."},
@@ -2558,8 +2481,7 @@
             {"palavra":"antemanhã","significado":"Período antes da manhã."},
             {"palavra":"antessala","significado":"Sala que precede a sala principal."},
             {"palavra":"antifebril","significado":"Que combate a febre."},
-            {"palavra":"antifonas","significado":"Versículos cantados antes ou depois de um salmo."},
-           
+            {"palavra":"antifonas","significado":"Versículos cantados antes ou depois de um salmo."},           
             {"palavra":"antiquário","significado":"Comerciante de antiguidades; especialista em antiguidades."},
             {"palavra":"antiteatro","significado":"Parte do teatro situada antes da sala de espetáculos."},
             {"palavra":"antropoide","significado":"Semelhante ao homem."},
@@ -2602,7 +2524,6 @@
             {"palavra":"automóvel","significado":"Veículo com motor próprio; carro."},
             {"palavra":"autonomia","significado":"Capacidade de governar-se por si mesmo; independência."},
             {"palavra":"avalanche","significado":"Grande massa de neve ou terra que desliza; grande quantidade de algo."},
-            
             {"palavra":"avicultor","significado":"Criador de aves."},
             {"palavra":"aviltante","significado":"Que avilta; degradante; humilhante."},
             {"palavra":"avizinhar","significado":"Tornar vizinho; aproximar; estar perto."},
@@ -2633,8 +2554,7 @@
             {"palavra":"burburinho","significado":"Ruído confuso de muitas vozes; agitação."},
             {"palavra":"burocracia","significado":"Sistema administrativo baseado em normas e hierarquia; excesso de formalidades."},
             {"palavra":"adrenalina","significado":"Hormônio produzido pelas glândulas suprarrenais; substância que aumenta o ritmo cardíaco."},
-            {"palavra":"aerofagia","significado":"Ato de engolir ar em excesso."},
-           
+            {"palavra":"aerofagia","significado":"Ato de engolir ar em excesso."},           
             {"palavra":"afrontoso","significado":"Que causa afronta; insultante; vergonhoso."},
             {"palavra":"alacridade","significado":"Alegria, vivacidade; entusiasmo."},
             {"palavra":"alambique","significado":"Aparelho para destilar."},
@@ -2666,18 +2586,15 @@
             {"palavra":"anafilaxia","significado":"Reação alérgica grave e súbita."},
             {"palavra":"analgésico","significado":"Substância que alivia a dor."},
             {"palavra":"analógico","significado":"Que funciona por analogia; que representa grandezas por variação contínua."},
-            {"palavra":"anarquismo","significado":"Doutrina que prega a supressão do Estado e de toda forma de autoridade."},
-            
+            {"palavra":"anarquismo","significado":"Doutrina que prega a supressão do Estado e de toda forma de autoridade."},            
             {"palavra":"anatomista","significado":"Especialista em anatomia."},
             {"palavra":"andamento","significado":"Modo de andar; ritmo; desenvolvimento (de processo)."},
             {"palavra":"aneurisma","significado":"Dilatação de artéria."},
             {"palavra":"anoréxico","significado":"Que ou quem tem anorexia."},
             {"palavra":"anovulação","significado":"Ausência de ovulação."},
             {"palavra":"anquilose","significado":"Rigidez de articulação."},
-            {"palavra":"antagônico","significado":"Característica do que é contrário ou oposto."},
-            
-            {"palavra":"antecessor","significado":"Que ou quem antecede; predecessor."},
-         
+            {"palavra":"antagônico","significado":"Característica do que é contrário ou oposto."},           
+            {"palavra":"antecessor","significado":"Que ou quem antecede; predecessor."},        
             {"palavra":"antepasto","significado":"Pequenos pratos servidos antes da refeição principal."},
             {"palavra":"antebraço","significado":"Parte do braço entre o cotovelo e o pulso."},
             {"palavra":"acessório","significado":"Que é secundário; adicional; objeto que complementa."},
@@ -2695,8 +2612,7 @@
             {"palavra":"aerofólio","significado":"Superfície que produz força de sustentação ou arrasto no ar."},
             {"palavra":"afluência","significado":"Ato de afluir; abundância; grande número de pessoas."},
             {"palavra":"aforamento","significado":"Concessão de terreno mediante pagamento de foro."},
-            {"palavra":"agilidade","significado":"Qualidade de ágil; destreza; rapidez."},
-       
+            {"palavra":"agilidade","significado":"Qualidade de ágil; destreza; rapidez."},       
             {"palavra":"zootecnia","significado":"Ciência da criação de animais domésticos."},
             {"palavra":"xilografia","significado":"Arte de gravar em madeira; xilogravura."},
             {"palavra":"vitupério","significado":"Insulto, afronta; desonra."},
@@ -2742,8 +2658,7 @@
             {"palavra":"reprodução","significado":"Ato de reproduzir; cópia; geração de descendentes."},
             {"palavra":"repentino","significado":"Que acontece de repente; súbito."},
             {"palavra":"renovação","significado":"Ato de renovar; restauração; mudança para melhor."},
-            {"palavra":"refugiado","significado":"Que ou quem busca refúgio; exilado."},
-          
+            {"palavra":"refugiado","significado":"Que ou quem busca refúgio; exilado."},          
             {"palavra":"reforçado","significado":"Que foi reforçado; mais resistente."},
             {"palavra":"recreação","significado":"Ato de recrear; divertimento; lazer."},
             {"palavra":"recompensa","significado":"Aquilo que se recebe por mérito; prêmio; gratificação."},
@@ -2845,8 +2760,7 @@
             {"palavra":"aprimorado","significado":"Que foi aprimorado; aperfeiçoado."},
             {"palavra":"apropriado","significado":"Que foi apropriado; adequado; tomado posse."},
             {"palavra":"aprovação","significado":"Ato de aprovar; consentimento; aceitação."},
-            {"palavra":"aprovativo","significado":"Que aprova."},
-          
+            {"palavra":"aprovativo","significado":"Que aprova."},          
             {"palavra":"arborizado","significado":"Que foi arborizado; com árvores."},
             {"palavra":"arquejado","significado":"Que arquejou; ofegante."},
             {"palavra":"arraigado","significado":"Que criou raízes; fixo; profundo."},
@@ -2911,8 +2825,7 @@
             {"palavra":"vociferar","significado":"Gritar com veemência; vociferar impropérios."},
             {"palavra":"voracidade","significado":"Qualidade de voraz; apetite insaciável; avidez."},
             {"palavra":"ziguezague","significado":"Linha ou caminho em ziguezague."},
-            {"palavra":"zoológico","significado":"Relativo a zoologia."},
-            
+            {"palavra":"zoológico","significado":"Relativo a zoologia."},            
             {"palavra":"utilização","significado":"Ato de utilizar; uso."},
             {"palavra":"diferença","significado":"Qualidade do que é diferente; distinção."},
             {"palavra":"analisado","significado":"Que foi analisado; examinado."},
@@ -3246,8 +3159,7 @@
             {"palavra":"aniquilador","significado":"Que ou quem aniquila."},
             {"palavra":"aniversariar","significado":"Comemorar aniversário."},
             {"palavra":"antagonizar","significado":"Criar antagonismo entre; opor-se a."},
-            {"palavra":"antialérgico","significado":"Que combate alergias."},
-            
+            {"palavra":"antialérgico","significado":"Que combate alergias."},            
             {"palavra":"anticlerical","significado":"Contrário à influência do clero na vida pública."},
             {"palavra":"antifascista","significado":"Contrário ao fascismo."},
             {"palavra":"antipolítico","significado":"Contrário à política."},
@@ -3264,8 +3176,7 @@
             {"palavra":"articulação","significado":"União entre ossos; clareza na fala; ligação entre partes."},
             {"palavra":"assentimento","significado":"Ato de assentir; consentimento; aprovação."},
             {"palavra":"antimatéria","significado":"Matéria composta de antipartículas."},
-            {"palavra":"antroponímia","significado":"Estudo dos nomes próprios de pessoas."},
-            
+            {"palavra":"antroponímia","significado":"Estudo dos nomes próprios de pessoas."},            
             {"palavra":"astigmatismo","significado":"Defeito visual que causa visão distorcida."},
             {"palavra":"astringente","significado":"Que contrai tecidos; adstringente."},
             {"palavra":"avitaminose","significado":"Doença causada pela falta de vitaminas."},
@@ -3279,9 +3190,7 @@
             {"palavra":"bibliografia","significado":"Lista de livros sobre determinado assunto; estudo de livros."},
             {"palavra":"biomecânica","significado":"Estudo dos princípios da mecânica aplicados a sistemas biológicos."},
             {"palavra":"bisbilhotar","significado":"Procurar saber da vida alheia; intrometer-se."},
-            {"palavra":"bonificação","significado":"Ato de bonificar; gratificação; desconto."},
-            
-           
+            {"palavra":"bonificação","significado":"Ato de bonificar; gratificação; desconto."},          
             {"palavra":"agnosticismo","significado":"Doutrina que considera impossível conhecer a natureza de Deus ou o absoluto."},
             {"palavra":"agravamento","significado":"Ato de agravar; piora; aumento."},
             {"palavra":"agrimensura","significado":"Arte e ciência de medir terras."},
@@ -3406,8 +3315,7 @@
             {"palavra":"classificado","significado":"Que foi classificado; organizado."},
             {"palavra":"utilizar-se","significado":"Fazer uso de (reflexivo)."},
             {"palavra":"diferenciado","significado":"Que foi diferenciado; distinto."},
-            {"palavra":"significante","significado":"Que significa; expressivo."},
-            
+            {"palavra":"significante","significado":"Que significa; expressivo."},           
             {"palavra":"diferencial","significado":"Que estabelece diferença; em matemática, variação infinitesimal."}
         ],
 
